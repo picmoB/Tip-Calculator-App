@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 350px;
+            height: 150px;
+        }
+
+        .first {
+            background: red;
+            transform: translate(50px, 250px);
+        }
+
+        .second {
+            background: yellow;
+            transform: rotate(30deg);
+        }
+
+        .third {
+            background: blue;
+            transform: scaleX(2);
+        }
+
+        .fourth {
+            background: green;
+            
+            transform: skewX(20deg);
+            transform: skewY(40deg);
+            transform: skew(20deg, 40deg);
+            transform: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY());
+            transform: matrix(1, -0.4, 0, 2, 1, 0);
+        }
+
+        .five {
+            margin-top: 320px;
+            transform: rotate3d(2, -1, -1, 120deg);
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third"></div>
+    <br>
+    <div class="fourth"></div>
+    <div class="five"></div>
+</body>
+</html>

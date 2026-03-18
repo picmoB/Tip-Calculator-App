@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pad Start Example</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="padStart">1. Pad Start</h1>
+        <h1 class="last4Digits">2. Last 4 Digits</h1>
+        <h1 class="maskedNumber">3. Masked Number</h1>
+    </div>
+
+    <script>
+        const str1 = "5";
+
+        console.log(str1.padStart(2, "0"));
+        // Expected output: "05"
+
+        const fullNumber = "2034399002125581";
+        const last4Digits = fullNumber.slice(-4);
+        const maskedNumber = last4Digits.padStart(fullNumber.length, "*");
+
+        console.log(last4Digits);
+        // Expected output: "5581"
+
+        console.log(maskedNumber);
+        // Expected output: "************5581"
+
+        document.querySelector(".padStart").textContent = "1. Pad Start: " + str1.padStart(2, "0");
+        document.querySelector(".last4Digits").textContent = "2. Last 4 Digits: " + last4Digits;
+        document.querySelector(".maskedNumber").textContent = "3. Masked Number: " + maskedNumber;
+    </script>
+</body>
+</html>

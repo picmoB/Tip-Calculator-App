@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image</title>
+</head>
+<body>
+
+    <h2>Pozadinska Slika</h2>
+    <p style="height: 700px; width: 700px; background-image: url('https://images.prismic.io/carwow/65cbb34b-b61c-48af-b34e-5bd785e95a28_2023+Porsche+911+front+quarter+moving.jpg');">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ad asperiores aperiam, libero iusto id suscipit voluptatum reiciendis omnis corporis nisi placeat! Neque distinctio in, consequatur ea vitae nostrum commodi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nemo! Tenetur similique omnis laborum magnam dicta obcaecati nesciunt non expedita porro exercitationem quam commodi beatae possimus, corporis, aut incidunt sit!
+    </p>
+
+    <picture>
+        <source media="(min-width: 900px)" srcset="https://images.prismic.io/carwow/65cbb34b-b61c-48af-b34e-5bd785e95a28_2023+Porsche+911+front+quarter+moving.jpg">
+        <source media="(min-width: 500px)" srcset="https://assets.porsche.com/hr/zagreb/-/media/Project/DealerWebsites/Croatia/Zagreb/Homepage-stage/Nova_Panamera_stage_header_D.jpg?rev=97b57c36f4f942e2b2a2aafc8452dd8f">
+        <!-- Ako niti jedan uvjet nije ispunjen -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIqzXMieWcgK3sY_Ggeh6gTOOY42fy0ZR6gUwsQ2DleigxiY8QWOoh7_Jm1Da5oLNkp6I&usqp=CAU" alt="Porsche Logo">
+    </picture>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6th Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+</head>
+<body>
+    <main class="container">
+        <section class="left-part">
+            <div class="top-part">
+                <h2>Mortgage Calculator</h2>
+                <p class="clear-all">Clear All</p>
+            </div>
+            <form class="input-holder">
+                <div class="wrapper-div">
+                    <label for="amount">Mortgage Amount</label>
+                    <div class="input-content" style="justify-content: flex-start;">
+                        <input class="all-input-txt" type="number" name="mortgage-amount" id="amount">
+                        <div class="input-hint">
+                            <p>£</p>
+                        </div>
+                    </div>
+                    <p class="input-error" style="display: none;">This field is required.</p>
+                </div>
+
+                <div class="input-wrapper">
+                    <div class="wrapper-div">
+                        <label for="term">Mortgage Term</label>
+                        <div class="input-content">
+                            <input class="all-input-txt" type="number" name="mortgage-term" id="term">
+                            <div class="input-hint">
+                                <p>year</p>
+                            </div>
+                        </div>
+                        <p class="input-error" style="display: none;">This field is required.</p>
+                    </div>
+
+                    <div class="wrapper-div">
+                        <label for="rate">Interest Rate</label>
+                        <div class="input-content">
+                            <input class="all-input-txt" type="number" name="interest-rate" id="rate">
+                            <div class="input-hint">
+                                <p>%</p>
+                            </div>
+                        </div>
+                        <p class="input-error" style="display: none;">This field is required.</p>
+                    </div>
+                </div>
+                <div class="input-radio-wrapper">
+                    <label for="radio">Mortgage Type</label>
+                    <div class="radio-div">
+                        <input class="radio-inputs" type="radio" name="radio" id="repayment">
+                        <p class="input-radio-txt">Repayment</p>
+                    </div>
+                    <div class="radio-div">
+                        <input class="radio-inputs" type="radio" name="radio" id="interest">
+                        <p class="input-radio-txt">Interest Only</p>
+                    </div>
+                    <p class="input-error" style="display: none;">This field is required.</p>
+                </div>
+
+                <button type="submit" id="btn-submit"><img src="assets/images/icon-calculator.svg">Calculate Payments</button>
+            </form>
+        </section>
+
+        <section class="right-part">
+            <div class="before-submit">
+                <img class="right-img" src="assets/images/illustration-empty.svg" alt="illustration-empty">
+                <h2>Results Shown Here</h2>
+                <p>Complete the form and click "Calculate Payments" to see what your monthly repayments would be.</p>
+            </div>
+            <!-- Update UI after submit! -->
+            <div class="after-submit" style="display: none;">
+                <h2>Your Results</h2>
+                <p>
+                    Your results are shown below based on the information you provided.
+                    To adjust the results, edit the form and click "Calculate Payments" again.
+                </p>
+                <span class="yellow-span"></span>
+                <div class="mortgage-info">
+                    <div class="monthly-repayments">
+                        <h2>Your monthly payments</h2>
+                        <p class="monthly-p">£2020.20</p>
+                    </div>
+                    <span class="line"></span>
+                    <div class="total-repay">
+                        <h2>Total you'll repay over the term.</h2>
+                        <p class="total-p">£2020.20</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

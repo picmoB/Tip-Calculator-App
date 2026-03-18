@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style_cars.css">
+    <title>Boxcars</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <span class="loader"></span>
+    </div>
+    <div id="page-content" class="hide-content">  
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+        <div class="hamburger-menu">
+            <ul>
+                <li>
+                    <div class="home">
+                        <a class="aa" href="">Home</a>
+                        <div class="dropdown">
+                            <img src="assets/img/Border.png" alt="border" />
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="listings">
+                        <a class="aa" href="">Listings</a>
+                        <div class="dropdown">
+                            <img src="assets/img/Border.png" alt="border" />
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="pages">
+                        <a class="aa" href="">Pages</a>
+                        <div class="dropdown">
+                            <img src="assets/img/Border.png" alt="border" />
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="about">
+                        <a class="aa" href="">About</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="contact">
+                        <a class="aa" href="">Contact</a>
+                    </div>
+                </li>
+                <li>
+                    <p id="num">
+                        <img class="mobile-img" src="assets/img/SVG-mobile.png" alt="mob" /> <nobr class="mobile-num">+75 123 456 789</nobr>
+                    </p>
+                </li>
+            </ul>
+        </div>
+              
+    <header class="maxw top-part">
+        <nav class="top-left">
+            <a href=""> <img src="assets/img/logo.svg.png" alt="logo-img"></a>
+            <a href="">Home <img src="assets/img/Border.png" alt="border-img"></a>
+            <a href="">Listings <img src="assets/img/Border.png" alt="border-img"></a>
+            <a href="">Blog <img src="assets/img/Border.png" alt="border-img"></a>
+            <a href="">Pages <img src="assets/img/Border.png" alt="border-img"></a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">+75 123 456 789</a>
+        </nav>
+
+        <nav class="top-right">
+            <button class="modal-btn"><img src="assets/img/Icon_avatar.png" alt="sign-img"> Sign in</button>
+            <button class="top-right-btn">Submit Listing</button>
+        </nav>
+
+        <div class="modal-overlay">
+            <div class="modal-container">
+                <h3>Enter your e-mail</h3>
+                <button class="close-btn"><i class="fas fa-times">&times;</i></button>
+                <form id="emailForm">
+                    <input type="text" id="mail" name="mail" placeholder="Your e-mail address">
+                    <input class="modal-submit" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section class="maxw intro">
+        <div class="intro-img">
+            <!--<img src="assets/img/rs-sbg-px → rs-sbg-wrap → rs-sbg → image.png" alt="intro-car-img">-->
+            <div class="intro-img-slider">
+                <div class="intro-slide active">
+                    <img src="assets/img/header-image.png" alt="slider">
+                    <h4>The World's Largest Used Car Dealership</h4>
+                    <p>Find Your Perfect Vehicle Online</p>
+                </div>
+                <div class="intro-slide">
+                    <img src="assets/img/header-image.png" alt="slider">
+                    <h4>The World's Largest Used Car Dealership</h4>
+                    <p>Find Your Deluxe Vehicle Online</p>
+                </div>
+                <div class="intro-slide">
+                    <img src="assets/img/header-image.png" alt="slider">
+                    <h4>The World's Largest Used Car Dealership</h4>
+                    <p>Find Your Dream Vehicle Online</p>
+                </div>
+            </div>
+            <!--<h4>The World's Largest Used Car Dealership</h4>
+            <p>Find Your Perfect Vehicle Online</p>-->
+            <div class="intro-arrows-block">
+                <div class="intro-img-left">
+                    <img src="assets/img/Icon-left-img.png" alt="left-img">
+                </div>
+
+                <div class="intro-img-right">
+                    <img src="assets/img/Icon-right-img.png" alt="right-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="intro-car-type">
+        <div class="intro-cars">
+            <h4>Select a Body Style</h4>
+            <div class="intro-car-holder">
+                <div class="intro-block">
+                    <img src="assets/img/sedan.jpg.png" alt="sedan-img">
+                    <p>Sedan</p>
+                </div>
+
+                <div class="intro-block">
+                    <img src="assets/img/coupe.jpg.png" alt="coupe-img">
+                    <p>Coupe</p>
+                </div>
+
+                <div class="intro-block">
+                    <img src="assets/img/suv.jpg.png" alt="suv-img">
+                    <p>SUV</p>
+                </div>
+
+                <div class="intro-block">
+                    <img src="assets/img/truck.jpg.png" alt="truck-img">
+                    <p>Truck</p>
+                </div>
+
+                <div class="intro-block">
+                    <img src="assets/img/hat.jpg.png" alt="hat-img">
+                    <p>Hatchback</p>
+                </div>
+
+                <div class="intro-block">
+                    <img src="assets/img/mini.jpg.png" alt="mini-img">
+                    <p>Convertible</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="maxw boxcars-offerings">
+        <div class="boxcars-offerings-left">
+            <h4>We're BIG on what
+                matters to you</h4>
+        </div>
+
+        <div class="boxcars-offerings-right">
+            <div class="boxcars-offerings-block">
+                <img src="assets/img/f-d-1.svg.png" alt="block-img-1">
+                <h4>Special Financing Offers</h4>
+                <p>Our stress-free finance department that can
+                    find financial solutions to save you money.</p>
+            </div>
+
+            <div class="boxcars-offerings-block">
+                <img src="assets/img/f-d-2.svg.png" alt="block-img-2">
+                <h4>Trusted Car Dealership</h4>
+                <p>Our stress-free finance department that can
+                    find financial solutions to save you money.</p>
+            </div>
+
+            <div class="boxcars-offerings-block">
+                <img src="assets/img/f-d-3.svg.png" alt="block-img-3">
+                <h4>Transparent Pricing</h4>
+                <p>Our stress-free finance department that can
+                    find financial solutions to save you money.</p>
+            </div>
+
+            <div class="boxcars-offerings-block">
+                <img src="assets/img/f-d-4.svg.png" alt="block-img-4">
+                <h4>Expert Car Service</h4>
+                <p>Our stress-free finance department that can
+                    find financial solutions to save you money.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="maxw most-searched-cars">
+        <h4>The Most Searched Cars</h4>
+        <div class="most-searched-cars-tabs">
+            <p class="msc-div" data-type="sedan">Sedan</p>
+            <p data-type="suv">SUV</p>
+            <p data-type="convertible">Convertible</p>
+            <p data-type="all">Hatchback</p>
+        </div>
+
+        <div class="most-searched-cars-holder">
+            <div id="car-block" class="most-searched-cars-block" data-type="suv" data-id="1">
+                <div class="msc-img-right">
+                    <img class="save-icon" src="assets/img/Icon-save.png" alt="save-icon">
+                </div>
+                <!-- Slika prebacena OVDJE: -->
+                <img class="car-img" src="assets/img/car9-660x440.jpg.png" alt="car-img-1">
+                <h4 class="car-name">T-Cross – 2023</h4>
+                <p class="car-info">4.0 D5 PowerPulse Momentum 5dr AW…
+                    Geartronic Estate</p>
+                <div class="msc-icons">
+                    <div class="msc-icon-set">
+                        <img src="assets/img/Icon.png" alt="icon-1">
+                        <p class="car-mileage">15 Miles</p>
+                    </div>
+
+                    <div class="msc-icon-set">
+                        <img src="assets/img/Icon2.png" alt="icon-2">
+                        <p class="car-fuel">Petrol</p>
+                    </div>
+
+                    <div class="msc-icon-set">
+                        <img src="assets/img/Icon3.png" alt="icon-3">
+                        <p class="car-transmission">CVT</p>
+                    </div>
+                </div>
+
+                <div class="msc-prices">
+                    <h4 class="price-amount">$15,000</h4>
+                    <p class="msc-price-detail">View Details <img src="assets/img/SVG-blue.png" alt="svg-img"></p>
+                </div>
+            </div>
+
+            <div id="car-block" class="most-searched-cars-block" data-type="sedan" data-id="2">
+                <div class="msc-img-right">
+                    <div class="msc-img-left-green">
+                        Great Price
+                    </div>
+                    <img class="save-icon" src="assets/img/Icon-save.png" alt="save-icon">
+                </div>
+                <!-- Slika prebacena OVDJE: -->
+                <img class="car-img" src="assets/img/car10-660x440.jpg.png" alt="car-img-2">
+                <h4 class="car-name">BMW X8 – 5.0</h4>
+                <p class="car-info">4.0 D5 PowerPulse Momentum 5dr AW…
+                    Geartronic Estate</p>
+                <div class="msc-icons">
+                    <div class="msc-icon-set">
+                        <img src="assets/img/Icon.png" alt="icon-1">
+                        <p class="car-mileage">100 Miles</p>
+                    </div>
+
+                    <div class="msc-icon-set">
+                        <img src="assets/img/Icon2.png" alt="icon-2">
+                        <p class="car-fuel">Hybrid</p>
+                    </div>
+
+                    <div class="msc-icon-set">
+                        <img src="assets/img/Icon3.png" alt="icon-3">
+                        <p class="car-transmission">CVT</p>
+                    </div>
+                </div>
+
+                <div class="msc-prices">
+                    <h4 class="price-amount">$12,000</h4>
+                    <p class="msc-price-detail">View Details <img src="assets/img/SVG-blue.png" alt="svg-img"></p>
+                </div>
+            </div>
+
+            <div id="car-block" class="most-searched-cars-block" data-type="sedan" data-id="3">
+                <div class="msc-img-right">
+                    <div class="msc-img-left-blue">
+                        Sale
+                    </div>
+                    <img class="save-icon" src="assets/img/Icon-save.png" alt="save-icon">
+                </div>
+                <!-- Slika prebacena OVDJE: -->
+                <img class="car-img" src="assets/img/car11-660x440.jpg.png" alt="car-img-3">
+                <h4 class="car-name">Ranger Black – 2021</h4>
+                <p class="car-info">2.0 D5 PowerPulse Momentum 5dr AW…
+                    Geartronic Estate</p>
+                <div class="msc-icons">
+                    <div class="msc-icon-set">
+                        <img src="assets/img/Icon.png" alt="icon-1">
+                        <p class="car-mileage">250 Miles</p>
+                    </div>
+
+                    <div class="msc-icon-set">
+                        <img src="assets/img/Icon2.png" alt="icon-2">
+                        <p class="car-fuel">Petrol</p>
+                    </div>
+
+                    <div class="msc-icon-set">
+                        <img src="assets/img/Icon3.png" alt="icon-3">
+                        <p class="car-transmission">Manual</p>
+                    </div>
+                </div>
+
+                <div class="msc-prices">
+                    <div class="msc-grid">
+                        <h5>$180,000</h5>
+                        <h4 class="price-amount">$165,000</h4>
+                    </div>
+                    <p class="msc-price-detail">View Details <img src="assets/img/SVG-blue.png" alt="svg-img"></p>
+                </div>
+            </div>
+
+            <div id="car-block" class="most-searched-cars-block" data-type="suv" data-id="4">
+                <div class="msc-img-right">
+                    <div class="msc-img-left-blue">
+                        Sale
+                    </div>
+                    <img class="save-icon" src="assets/img/Icon-save.png" alt="save-icon">
+                </div>
+                <!-- Slika prebacena OVDJE: -->
+                <img class="car-img" src="assets/img/car13-660x440.jpg.png" alt="car-img-4">
+                <h4 class="car-name">Audi A4 – 2022</h4>
+                <p class="car-info">2.0 D5 PowerPulse Momentum 5dr AW…
+                    Geartronic Estate</p>
+                <div class="msc-icons">
+                    <div class="msc-icon-set">
+                        <img src="assets/img/Icon.png" alt="icon-1">
+                        <p class="car-mileage">150 Miles</p>
+                    </div>
+
+                    <div class="msc-icon-set">
+                        <img src="assets/img/Icon2.png" alt="icon-2">
+                        <p class="car-fuel">Diesel</p>
+                    </div>
+
+                    <div class="msc-icon-set">
+                        <img src="assets/img/Icon3.png" alt="icon-3">
+                        <p class="car-transmission">CVT</p>
+                    </div>
+                </div>
+
+                <div class="msc-prices">
+                    <h4 class="price-amount">$120,000</h4>
+                    <p class="msc-price-detail">View Details <img src="assets/img/SVG-blue.png" alt="svg-img"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="most-searched-cars-below">
+            <div class="msc-below-img" id="btnLeft">
+                <img class="icon-arrow" src="assets/img/Icon-left.png" alt="icon-left">
+            </div>
+
+            <div class="msc-below-img" id="btnRight">
+                <img class="icon-arrow" src="assets/img/Icon-right.png" alt="icon-right">
+            </div>
+        </div>
+    </section>
+
+    <section class="maxw car-deals">
+        <div class="car-deals-block">
+            <h4>Are You Looking<br>
+                For a Car ?</h4>
+            <p>We are committed to providing our customers with<br>
+                exceptional service.</p>
+            <button class="cdb-btn-1">Get Started <img src="assets/img/SVG.png" alt="svg-img"></button>
+            <img src="assets/img/electric-car.svg.png" alt="e-car">
+        </div>
+
+        <div class="car-deals-block">
+            <h4>Do You Want to<br>
+                Sell a Car ?</h4>
+            <p>We are committed to providing our customers with<br>
+                exceptional service.</p>
+            <button class="cdb-btn-2">Get Started <img src="assets/img/SVG.png" alt="svg-img"></button>
+            <img src="assets/img/electric-car2.svg.png" alt="e-car-2">
+        </div>
+    </section>
+
+    <section class="maxw recommended-cars">
+        <h4>Recommended Cars For You</h4>
+        <div class="recommended-cars-holder">
+            <div id="car-block" class="most-searched-cars-block" data-type="suv" data-id="5">
+                <div class="msc-img-right">
+                    <div class="rc-cars-left-green">
+                        Great Price
+                    </div>
+                    <img class="save-icon" src="assets/img/Icon-save.png" alt="save-icon">
+                </div>
+                <!-- Slika prebacena OVDJE: -->
+                <img class="car-img" src="assets/img/car6-660x440.jpg.png" alt="car-img-5">
+                <h4 class="car-name">Mercedes-Benz, C Class</h4>
+                <p class="car-info">2.0 D5 PowerPulse Momentum 5dr AW…
+                    Geartronic Estate</p>
+                <div class="rc-icons">
+                    <div class="rc-icon-set">
+                        <img src="assets/img/Icon.png" alt="icon-1">
+                        <p class="car-mileage">100 Miles</p>
+                    </div>
+
+                    <div class="rc-icon-set">
+                        <img src="assets/img/Icon2.png" alt="icon-2">
+                        <p class="car-fuel">Petrol</p>
+                    </div>
+
+                    <div class="rc-icon-set">
+                        <img src="assets/img/Icon3.png" alt="icon-3">
+                        <p class="car-transmission">Automatic</p>
+                    </div>
+                </div>
+
+                <div class="rc-prices">
+                    <div class="rc-prices-grid">
+                        <p class="rc-old-price">$40,000</p>
+                        <p class="price-amount">$35,000</p>
+                    </div>
+                    <p>View Details <img src="assets/img/SVG-blue.png" alt="svg-img"></p>
+                </div>
+            </div>
+
+            <div id="car-block" class="most-searched-cars-block" data-type="sedan" data-id="6">
+                <div class="msc-img-right">
+                    <div class="rc-cars-left-blue">
+                        Low Milleage
+                    </div>
+                    <img class="save-icon" src="assets/img/Icon-save.png" alt="save-icon">
+                </div>
+                <!-- Slika prebacena OVDJE: -->
+                <img class="car-img" src="assets/img/car11-660x440.jpg.png" alt="car-img-6">
+                <h4 class="car-name">Ranger Black – 2021</h4>
+                <p class="car-info">2.0 D5 PowerPulse Momentum 5dr AW…
+                    Geartronic Estate</p>
+                <div class="rc-icons">
+                    <div class="rc-icon-set">
+                        <img src="assets/img/Icon.png" alt="icon-1">
+                        <p class="car-mileage">250 Miles</p>
+                    </div>
+
+                    <div class="rc-icon-set">
+                        <img src="assets/img/Icon2.png" alt="icon-2">
+                        <p class="car-fuel">Petrol</p>
+                    </div>
+
+                    <div class="rc-icon-set">
+                        <img src="assets/img/Icon3.png" alt="icon-3">
+                        <p class="car-transmission">Manual</p>
+                    </div>
+                </div>
+
+                <div class="rc-prices">
+                    <div class="rc-prices-grid">
+                        <p class="rc-old-price">$180,000</p>
+                        <p class="price-amount">$165,000</p>
+                    </div>
+                    <p>View Details <img src="assets/img/SVG-blue.png" alt="svg-img"></p>
+                </div>
+            </div>
+
+            <div id="car-block" class="most-searched-cars-block" data-type="sedan" data-id="7">
+                <div class="msc-img-right">
+                    <div class="rc-cars-left-blue">
+                        Low Mileage
+                    </div>
+                    <img class="save-icon" src="assets/img/Icon-save.png" alt="save-icon">
+                </div>
+                <!-- Slika prebacena OVDJE: -->
+                <img class="car-img" src="assets/img/car3-660x440.jpg.png" alt="car-img-7">
+                <h4 class="car-name">Ranger White – 2022</h4>
+                <p class="car-info">2.0 D5 PowerPulse Momentum 5dr AW…
+                    Geartronic Estate</p>
+                <div class="rc-icons">
+                    <div class="rc-icon-set">
+                        <img src="assets/img/Icon.png" alt="icon-1">
+                        <p class="car-mileage">30000 Miles</p>
+                    </div>
+
+                    <div class="rc-icon-set">
+                        <img src="assets/img/Icon2.png" alt="icon-2">
+                        <p class="car-fuel">Diesel</p>
+                    </div>
+
+                    <div class="rc-icon-set">
+                        <img src="assets/img/Icon3.png" alt="icon-3">
+                        <p class="car-transmission">Manual</p>
+                    </div>
+                </div>
+
+                <div class="rc-prices">
+                    <h4 class="price-amount">$25,000</h4>
+                    <p>Viev Details <img src="assets/img/SVG-blue.png" alt="svg-img"></p>
+                </div>
+            </div>
+
+            <div id="car-block" class="most-searched-cars-block" data-type="suv" data-id="8">
+                <div class="msc-img-right">
+                    <div class="rc-cars-left-green">
+                        Great Price
+                    </div>
+                    <img class="save-icon" src="assets/img/Icon-save.png" alt="save-icon">
+                </div>
+                <!-- Slika prebacena OVDJE: -->
+                <img class="car-img" src="assets/img/car1-660x440.jpg.png" alt="car-img-8">
+                <h4 class="car-name">Ford Explorer 2023</h4>
+                <p class="car-info">3.5 D5 PowerPulse Momentum 5dr AW…
+                    Geartronic Estate</p>
+                <div class="rc-icons">
+                    <div class="rc-icon-set">
+                        <img src="assets/img/Icon.png" alt="icon-1">
+                        <p class="car-mileage">10 Miles</p>
+                    </div>
+
+                    <div class="rc-icon-set">
+                        <img src="assets/img/Icon2.png" alt="icon-2">
+                        <p class="car-fuel">Diesel</p>
+                    </div>
+
+                    <div class="rc-icon-set">
+                        <img src="assets/img/Icon3.png" alt="icon-3">
+                        <p class="car-transmission">CVT</p>
+                    </div>
+                </div>
+
+                <div class="rc-prices">
+                    <h4 class="price-amount">$35,000</h4>
+                    <p>View Details <img src="assets/img/SVG-blue.png" alt="svg-img"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="recommended-cars-below">
+            <div class="msc-below-img" id="btnLeft">
+                <img src="assets/img/Icon-left.png" alt="icon-left">
+            </div>
+
+            <div class="msc-below-img" id="btnRight">
+                <img src="assets/img/Icon-right.png" alt="icon-right">
+            </div>
+        </div>
+    </section>
+
+    <section class="maxw buy-car-online">
+        <div class="buy-car-online-left">
+            <img src="assets/img/h10.jpg.png" alt="left-img">
+        </div>
+
+        <div class="buy-car-online-right">
+            <h4>Online, in-person,<br>
+                everywhere</h4>
+            <p>Choose from thousands of vehicles from multiple brands and buy online with Click<br>
+                & Drive, or visit us at one of our dealerships today.</p>
+            <button>Get Started <img src="assets/img/SVG.png" alt="svg-img"></button>
+        </div>
+    </section>
+
+    <section class="maxw buy-car-online-numbers">
+        <div class="buy-car-online-numbers-block">
+            <h4>836M</h4>
+            <p>CARS FOR SALE</p>
+        </div>
+
+        <div class="buy-car-online-numbers-block">
+            <h4>738M</h4>
+            <p>DEALER REVIEWS</p>
+        </div>
+
+        <div class="buy-car-online-numbers-block">
+            <h4>100M</h4>
+            <p>VISITORS PER DAY</p>
+        </div>
+
+        <div class="buy-car-online-numbers-block">
+            <h4>238M</h4>
+            <p>VERIFIED DEALERS</p>
+        </div>
+    </section>
+
+    <section class="maxw upcoming-cars">
+        <h4>Upcoming Cars</h4>
+        <div class="upcoming-cars-holder">
+            <div id="car-block" class="most-searched-cars-block" data-type="suv" data-id="9">
+                <div class="msc-img-right">
+                    <img class="save-icon" src="assets/img/Icon-save.png" alt="save-icon">
+                </div>
+                <!-- Slika prebacena OVDJE: -->
+                <img class="car-img" src="assets/img/car9-660x440.jpg.png" alt="car-img-9">
+                <h4 class="car-name">T-Cross – 2023</h4>
+                <p class="car-info">4.0 D5 PowerPulse Momentum 5dr AW…
+                    Geartronic Estate</p>
+                <div class="uc-icons">
+                    <div class="uc-icon-set">
+                        <img src="assets/img/Icon.png" alt="icon-1">
+                        <p class="car-mileage">15 Miles</p>
+                    </div>
+
+                    <div class="uc-icon-set">
+                        <img src="assets/img/Icon2.png" alt="icon-2">
+                        <p class="car-fuel">Petrol</p>
+                    </div>
+
+                    <div class="uc-icon-set">
+                        <img src="assets/img/Icon3.png" alt="icon-3">
+                        <p class="car-transmission">CVT</p>
+                    </div>
+                </div>
+
+                <div class="uc-cars-prices">
+                    <h4 class="price-amount">$15,000</h4>
+                    <p>View Details <img src="assets/img/SVG-blue.png" alt="svg-img"></p>
+                </div>
+            </div>
+
+            <div id="car-block" class="most-searched-cars-block" data-type="sedan" data-id="10">
+                <div class="msc-img-right">
+                    <img class="save-icon" src="assets/img/Icon-save.png" alt="save-icon">
+                </div>
+                <!-- Slika prebacena OVDJE: -->
+                <img class="car-img" src="assets/img/car14-660x440.jpg.png" alt="car-img-10">
+                <h4 class="car-name">C-Class – 2023</h4>
+                <p class="car-info">4.0 D5 PowerPulse Momentum 5dr AW…
+                    Geartronic Estate</p>
+                <div class="uc-icons">
+                    <div class="uc-icon-set">
+                        <img src="assets/img/Icon.png" alt="icon-1">
+                        <p class="car-mileage">50 Miles</p>
+                    </div>
+
+                    <div class="uc-icon-set">
+                        <img src="assets/img/Icon2.png" alt="icon-2">
+                        <p class="car-fuel">Petrol</p>
+                    </div>
+
+                    <div class="uc-icon-set">
+                        <img src="assets/img/Icon3.png" alt="icon-3">
+                        <p class="car-transmission">Automatic</p>
+                    </div>
+                </div>
+
+                <div class="uc-cars-prices">
+                    <h4 class="price-amount">$150,000</h4>
+                    <p>View Details <img src="assets/img/SVG-blue.png" alt="svg-img"></p>
+                </div>
+            </div>
+
+            <div id="car-block" class="most-searched-cars-block" data-type="sedan" data-id="11">
+                <div class="msc-img-right">
+                    <img class="save-icon" src="assets/img/Icon-save.png" alt="save-icon">
+                    <div class="uc-cars-left-green">
+                        Great Price
+                    </div>
+                </div>
+                <!-- Slika prebacena OVDJE: -->
+                <img class="car-img" src="assets/img/car13-660x440.jpg.png" alt="car-img-11">
+                <h4 class="car-name">Ford Transit – 2021</h4>
+                <p class="car-info">4.0 D5 PowerPulse Momentum 5dr AW…
+                    Geartronic Estate</p>
+                <div class="uc-icons">
+                    <div class="uc-icon-set">
+                        <img src="assets/img/Icon.png" alt="icon-1">
+                        <p class="car-mileage">2500 Miles</p>
+                    </div>
+
+                    <div class="uc-icon-set">
+                        <img src="assets/img/Icon2.png" alt="icon-2">
+                        <p class="car-fuel">Diesel</p>
+                    </div>
+
+                    <div class="uc-icon-set">
+                        <img src="assets/img/Icon3.png" alt="icon-3">
+                        <p class="car-transmission">Manual</p>
+                    </div>
+                </div>
+
+                <div class="uc-cars-prices">
+                    <h4 class="price-amount">$22,000</h4>
+                    <p>View Details <img src="assets/img/SVG-blue.png" alt="svg-img"></p>
+                </div>
+            </div>
+
+            <div id="car-block" class="most-searched-cars-block" data-type="suv" data-id="12">
+                <div class="msc-img-right">
+                    <img class="save-icon" src="assets/img/Icon-save.png" alt="save-icon">
+                    <div class="uc-cars-left-blue">
+                        Low Milleage
+                    </div>
+                </div>
+                <!-- Slika prebacena OVDJE: -->
+                <img class="car-img" src="assets/img/car19-660x440.jpg.png" alt="car-img-12">
+                <h4 class="car-name">New GLC – 2023</h4>
+                <p class="car-info">4.0 D5 PowerPulse Momentum 5dr AW…
+                    Geartronic Estate</p>
+                <div class="uc-icons">
+                    <div class="uc-icon-set">
+                        <img src="assets/img/Icon.png" alt="icon-1">
+                        <p class="car-mileage">50 Miles</p>
+                    </div>
+
+                    <div class="uc-icon-set">
+                        <img src="assets/img/Icon2.png" alt="icon-2">
+                        <p class="car-fuel">Petrol</p>
+                    </div>
+
+                    <div class="uc-icon-set">
+                        <img src="assets/img/Icon3.png" alt="icon-3">
+                        <p class="car-transmission">Automatic</p>
+                    </div>
+                </div>
+
+                <div class="uc-cars-prices">
+                    <h4 class="price-amount">$95,000</h4>
+                    <p>View Details <img src="assets/img/SVG-blue.png" alt="svg-img"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="upcoming-cars-below">
+            <div class="msc-below-img" id="btnLeft">
+                <img src="assets/img/Icon-left.png" alt="icon-left">
+            </div>
+
+            <div class="msc-below-img" id="btnRight">
+                <img src="assets/img/Icon-right.png" alt="icon-right">
+            </div>
+        </div>
+    </section>
+
+    <section class="maxw customers-feedback">
+        <div class="customers-feedback-left">
+            <h4>What our<br>
+                customers say</h4>
+            <h2>Great</h2>
+            <img src="assets/img/stars.png.png" alt="stars-img">
+            <div class="txt-block">
+                <p class="txt-01">Based on</p>
+                <p class="txt-02" id="review-num-txt">5801 reviews</p>
+            </div>
+            <img src="assets/img/trustpilot.png.png" alt="trustpilot-img">
+        </div>
+
+        <div class="customers-feedback-right">
+            <div class="cf-arrows">
+                <div class="cf-left">
+                    <img src="assets/img/Icon-left.png" alt="icon-left" class="leftBtn">
+                </div>
+
+                <div class="cf-right">
+                    <img src="assets/img/Icon-right.png" alt="icon-right" class="rightBtn">
+                </div>
+            </div>
+
+            <div class="cf-top">
+                <div class="cf-stars-holder">
+                    <div class="cf-stars-block">
+                        <img src="assets/img/Symbol.png" alt="symbol-img">
+                    </div>
+
+                    <div class="cf-stars-block">
+                        <img src="assets/img/Symbol.png" alt="symbol-img">
+                    </div>
+
+                    <div class="cf-stars-block">
+                        <img src="assets/img/Symbol.png" alt="symbol-img">
+                    </div>
+
+                    <div class="cf-stars-block">
+                        <img src="assets/img/Symbol.png" alt="symbol-img">
+                    </div>
+
+                    <div class="cf-stars-block">
+                        <img src="assets/img/Symbol.png" alt="symbol-img">
+                    </div>
+                </div>
+
+                <div class="cf-verified">
+                    <div class="cf-verified-circle">
+                        <img src="assets/img/Symbol_check.png" alt="symbol-check-img">
+                    </div>
+
+                    <p>Verified</p>
+                </div>
+            </div>
+
+            <div class="cf-designer">
+                <h4 id="author">Ali TUFAN</h4>
+                <p id="job">Designer</p>
+                <p id="info" class="cf-designer-txt">I'd suggest Macklin Motors Nissan Glasgow South to a friend<br>
+                    because I had great service from my salesman Patrick and all<br>
+                    of the team.</p>
+            </div>
+
+            <div class="cf-team" id="cfTeam">
+                <img class="img-review" src="assets/img/team6-150x150.jpg.png" alt="team-img-1">
+                <img class="img-review" src="assets/img/team5-150x150.jpg.png" alt="team-img-2">
+                <img class="img-review" src="assets/img/team8-150x150.jpg.png" alt="team-img-3">
+            </div>
+        </div>
+    </section>
+
+    <section class="maxw latest-blog-posts">
+        <div class="latest-blog-posts-top">
+            <h4>Latest Blog Posts</h4>
+            <p>View All <img src="assets/img/SVG-black.png" alt="svg-img"></p>
+        </div>
+
+        <div class="latest-blog-posts-holder">
+            <div class="latest-blog-posts-block">
+                <div class="latest-blog-posts-img-1">
+                    <div class="lbp-sound">
+                        <p>Sound</p>
+                    </div>
+                </div>
+
+
+                <div class="latest-blog-posts-info">
+                    <div class="lbp-below-img">
+                        <p>Admin</p>
+                        <p>November 22, 2023</p>
+                    </div>
+
+                    <div class="lbp-desc">
+                        <p>2024 BMW ALPINA XB7 with exclusive details,<br>
+                            extraordinary</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="latest-blog-posts-block">
+                <div class="latest-blog-posts-img-2">
+                    <div class="lbp-accessories">
+                        <p>Accessories</p>
+                    </div>
+                </div>
+
+                <div class="latest-blog-posts-info">
+                    <div class="lbp-below-img">
+                        <p>Admin</p>
+                        <p>November 22, 2023</p>
+                    </div>
+
+                    <div class="lbp-desc">
+                        <p>BMW X6 M50i is designed to exceed your<br>
+                            sportiest.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="latest-blog-posts-block">
+                <div class="latest-blog-posts-img-3">
+                    <div class="lbp-exterior">
+                        <p>Exterior</p>
+                    </div>
+                </div>
+
+                <div class="latest-blog-posts-info">
+                    <div class="lbp-below-img">
+                        <p>Admin</p>
+                        <p>November 22, 2023</p>
+                    </div>
+
+                    <div class="lbp-desc">
+                        <p>BMW X5 Gold 2024 Sport Review: Light on<br>
+                            Sport</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="maxw premium-brands">
+        <div class="premium-brands-top">
+            <h4>Explore Our Premium Brands</h4>
+            <p>Show All Brands <img src="assets/img/SVG-black.png" alt="svg-img"></p>
+        </div>
+
+        <div class="premium-brands-holder">
+            <div class="premium-brands-block">
+                <img src="assets/img/b1.jpg.png" alt="brand-logo">
+                <p>Audi</p>
+            </div>
+
+            <div class="premium-brands-block">
+                <img src="assets/img/b2.jpg.png" alt="brand-logo">
+                <p>BMW</p>
+            </div>
+
+            <div class="premium-brands-block">
+                <img src="assets/img/b3.jpg.png" alt="brand-logo">
+                <p>Ford</p>
+            </div>
+
+            <div class="premium-brands-block">
+                <img src="assets/img/b4.jpg.png" alt="brand-logo">
+                <p>Mercedes Benz</p>
+            </div>
+
+            <div class="premium-brands-block">
+                <img src="assets/img/b5.jpg.png" alt="brand-logo">
+                <p>Peugeot</p>
+            </div>
+
+            <div class="premium-brands-block">
+                <img src="assets/img/b6.jpg.png" alt="brand-logo">
+                <p>Volkswagen</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="maxw faq-part">
+        <div class="faq-part-left">
+            <img src="assets/img/h74.jpg.png" alt="faq-img">
+        </div>
+
+        <div class="faq-part-right">
+            <h4>Have more questions? Don't<br class="faq-part-right-break">
+                hesitate to reach us</h4>
+            <p>123 Queensberry Street, North<br>
+                Melbourne VIC3051, Australia.</p>
+            <div class="faq-part-right-btn">
+                <div class="faq-btn-1">
+                    <p><img src="assets/img/SVG-mobile.png" alt="svg-img"> +76 956 039 999</p>
+                </div>
+
+                <div class="faq-btn-2">
+                    <p><img src="assets/img/SVG-mail.png" alt="svg-img"> ali@boxcars.com</p>
+                </div>
+            </div>
+
+            <div class="faq-main-btn">
+                <p>Get Started <img src="assets/img/SVG.png" alt="svg-img"></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="maxw about-us">
+        <nav class="about-us-links">
+            <h4>Company</h4>
+            <a href="">About Us</a>
+            <a href="">Blog</a>
+            <a href="">Services</a>
+            <a href="">FAQs</a>
+            <a href="">Terms</a>
+            <a href="">Contact Us</a>
+        </nav>
+
+        <nav class="about-us-links">
+            <h4>Quick Links</h4>
+            <a href="">Get in Touch</a>
+            <a href="">Help center</a>
+            <a href="">Live chat</a>
+            <a href="">How it works</a>
+        </nav>
+
+        <nav class="about-us-links">
+            <h4>Our Brands</h4>
+            <a href="">Toyota</a>
+            <a href="">Porsche</a>
+            <a href="">Audi</a>
+            <a href="">BMW</a>
+            <a href="">Ford</a>
+            <a href="">Nissan</a>
+            <a href="">Peugeot</a>
+            <a href="">Volkswagen</a>
+        </nav>
+
+        <nav class="about-us-links">
+            <h4>Vehicles Type</h4>
+            <a href="">Sedan</a>
+            <a href="">Hatchback</a>
+            <a href="">SUV</a>
+            <a href="">Hybrid</a>
+            <a href="">Electric</a>
+            <a href="">Coupe</a>
+            <a href="">Truck</a>
+            <a href="">Convertible</a>
+        </nav>
+
+        <div class="about-us-info">
+            <h4>Sale Hours</h4>
+            <p>Monday – Friday: 09:00AM – 09:00 PM<br>
+                Saturday: 09:00AM – 07:00PM<br>
+                Sunday: Closed</p>
+
+            <h4>Connect With Us</h4>
+            <div class="about-us-info-icons">
+                <img src="assets/img/Symbol-fb.png" alt="symbol-icon">
+                <img src="assets/img/Symbol-tw.png" alt="symbol-icon">
+                <img src="assets/img/Symbol-ig.png" alt="symbol-icon">
+                <img src="assets/img/Symbol-li.png" alt="symbol-icon">
+            </div>
+        </div>
+    </section>
+
+    <footer class="maxw terms-and-conditions">
+        <div class="tac-left">
+            <h4>© 2024 exemple.com. All rights reserved.</h4>
+        </div>
+
+        <div class="tac-right">
+            <h4>Terms & Conditions</h4>
+            <div class="tac-dot"></div>
+            <h4>Privacy Notice</h4>
+        </div>
+    </footer>
+</body>
+<script src="assets/js/js-autobox.js"></script>
+
+</html>

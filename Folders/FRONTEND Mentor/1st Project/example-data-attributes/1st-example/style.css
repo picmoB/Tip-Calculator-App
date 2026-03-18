@@ -1,0 +1,8 @@
+/**
+ * Style the [data-count] button
+ */
+ [data-count] {
+	background-color: #0088cc;
+	border-color: #0088cc;
+	color: #ffffff;
+}

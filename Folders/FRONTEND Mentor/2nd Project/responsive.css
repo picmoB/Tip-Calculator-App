@@ -1,0 +1,142 @@
+@media only screen and (max-width: 1420px) {
+    html {
+        background-repeat: no-repeat;
+        background-size: auto;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 1210px) {
+    .main-part {
+        background-image: url(assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg);
+        background-position: left bottom;
+        background-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 875px) {
+    .ticket-generated {
+        background-image: url(assets/images/pattern-squiggly-line-top.svg) ,url(assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg);
+        background-position: right top, left bottom;
+        background-size: auto, 75%;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    .coding-conf>h1{
+        width: 90vw;
+    }
+
+    .coding-conf>p{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .ticket-holder,
+    .ticket-main-part>img{
+        width: 90vw;
+    }
+
+    .ticket-main-part {
+        width: 70vw;
+    }
+
+    .ticket-info>div{
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 545px) {
+    .upload-img,
+    .generate-btn {
+        width: 90vw;
+    }
+
+    .upload-img-area {
+        width: 90vw;
+        justify-self: center;
+    }
+
+    .input-form,
+    input[type=text] {
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .uploaded-img-info {
+        width: 80px;
+        height: 80px;
+    }
+
+    .ticket-names>p{
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 465px) {
+    .uploaded-img-info {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .ticket-info {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .ticket-info {
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .ticket-names>p{
+        font-size: 20px;
+    }
+
+    .uploaded-img-info {
+        width: 60px;
+        height: 60px;
+    }
+
+    .full-logo-img {
+        width: 180px;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+    .ticket-date {
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .ticket-date {
+        margin: 0px;
+    }
+
+    .ticket-main-part {
+        width: 65vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .ticket-date {
+        font-size: 17px;
+    }
+
+    .uploadedName:last-child {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .ticket-date {
+        font-size: 12px;
+    }
+}

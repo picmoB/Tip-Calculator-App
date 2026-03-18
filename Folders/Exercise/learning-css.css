@@ -1,0 +1,27 @@
+.css {
+    color: yellow;
+    background-color: black;
+    width: 700px;
+    font-size: 100px;
+    font-style: italic;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: green;
+
+    margin: 10px;
+    padding: 10px;
+
+    border: 2px solid red;
+
+    text-align: center;
+    align-content: center;
+    /*align-items: center;*/
+}
+
+.box-div {
+    display: flex;
+    justify-content: space-evenly;
+}

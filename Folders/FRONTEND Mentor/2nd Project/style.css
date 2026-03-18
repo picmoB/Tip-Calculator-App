@@ -1,0 +1,466 @@
+html {
+    background-image: url(assets/images/background-desktop.png);
+    background-size: cover;
+}
+
+body {
+    background-image: url(assets/images/pattern-lines.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.coding-conf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 20px;
+    color: white;
+
+    background-image: url(assets/images/pattern-circle.svg), url(assets/images/pattern-squiggly-line-top.svg);
+    background-repeat: no-repeat;
+    background-position: 500px -100px, right;
+}
+
+.coding-conf-title>img{
+    align-self: center;
+    width: 40px;
+    height: 40px;
+}
+
+.coding-conf-title {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+
+.coding-conf>h1{
+    font-size: 50px;
+    width: 800px;
+    text-align: center;
+}
+
+.coding-conf>p{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.main-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: auto;
+    gap: 10px;
+    background-image: url(assets/images/pattern-circle.svg), url(assets/images/pattern-squiggly-line-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 1100px, left bottom;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#uploadedImg {
+    width: 70px;
+    height: 70px;
+}
+
+.uploadedEmail {
+    color: rgba(245, 142, 130);
+}
+
+#uploadImgAreaButtons {
+    display: flex;
+    gap: 5px;
+}
+
+.upload-img {
+    width: 520px;
+}
+
+.upload-img>label{
+    color: white;
+    font-size: 20px;
+}
+
+.upload-img-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-color: rgba(255, 255, 255, 0.5);
+    border-width: 2px;
+    border-style: dashed;
+    border-radius: 20px;
+    gap: 5px;
+}
+
+.upload-img-area>p{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#removeImg {
+    background-color: rgba(245, 142, 130);
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+#changeImg {
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+.upload-img-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.5);
+    background-image: url(assets/images/icon-upload.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.upload-img-btn>img{
+    width: 50px;
+    height: 50px;
+}
+
+.upload-img-info {
+    display: flex;
+    color: rgba(255, 255, 255, 0.5);
+    gap: 10px;
+    font-size: 10px;
+}
+
+.upload-img-info>div{
+    justify-content: center;
+    align-self: center;
+}
+
+#img-info {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.input-mask>span {
+    position: absolute;
+    z-index: -10;
+}
+
+.input-form {
+    margin-bottom: 20px;
+    gap: 50px;
+}
+
+.input-form>label{
+    color: white;
+    font-size: 20px;
+}
+
+.input-form>input{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    width: 520px;
+    height: 50px;
+    resize: none;
+}
+
+.change-img-input-mask>button {
+    position: absolute;
+    z-index: -10;
+}
+
+.change-img-input-mask>input {
+    width: 100px;
+    height: 25px;
+}
+
+/* AUTO-FILL */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid #434346;
+  -webkit-text-fill-color: #F1F1F1;
+  -webkit-box-shadow: 0 0 0px 1000px #64646425 inset;
+  transition: background-color 5000s ease-in-out 0s;
+};
+
+/* =========== */
+
+/* LOADING SCREEN */
+.loading-screen {
+    /* width: 0px; margin-left: auto; margin-right: auto; margin-top: 450px; */
+}
+
+.loader-01 {
+    position: absolute;
+    width: 120px;
+    height: 90px;
+    margin: 0 auto;
+}
+
+.loader-01:before {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #FF3D00;
+    animation: loading-bounce 0.5s ease-in-out infinite alternate;
+}
+
+.loader-01:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 7px;
+    width: 45px;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 #fff, -35px 50px 0 #fff, -70px 95px 0 #fff;
+    animation: loading-step 1s ease-in-out infinite;
+}
+
+@keyframes loading-bounce {
+    0% { transform: scale(1, 0.7)}
+    40% { transform: scale(0.8, 1.2)}
+    60% { transform: scale(1, 1)}
+    100% { bottom: 140px }
+}
+@keyframes loading-step {
+    0% {
+    box-shadow: 0 10px 0 rgba(0,0,0,0),
+                0 10px 0 #fff,
+                -35px 50px 0 #fff,
+                -70px 90px 0 #fff;
+    }
+    100% {
+    box-shadow: 0 10px 0 #fff,
+                -35px 50px 0 #fff,
+                -70px 90px 0 #fff,
+                -70px 90px 0 rgba(0,0,0,0);
+    }
+}
+
+/* =========== */
+
+/* FADE IN-OUT ANIMATIIONS */
+
+/* Primjena na 'ticket-generated' */
+.fade-in {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+/* Primjena na 'conf-title' & 'main-part' */
+.fade-out {
+    opacity: 1;
+    animation-name: fadeOutOpacity;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+/* Primjena na 'loading-screen' */
+.fade-in-and-out {
+    opacity: 0;
+    animation-name: fadeInAndOut;
+    animation-iteration-count: 1;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutOpacity {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes fadeInAndOut {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+/* =========== */
+
+.form-username {
+    text-transform: lowercase;
+}
+
+.generate-btn {
+    background-color: rgba(245, 142, 130);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 50px;
+    margin-bottom: 100px;
+    width: 520px;
+}
+
+.ticket-generated {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 20px;
+    color: white;
+    height: 1000px;
+
+    background-image: url(assets/images/pattern-circle.svg), url(assets/images/pattern-squiggly-line-top.svg), url(assets/images/pattern-squiggly-line-bottom-desktop.svg), url(assets/images/pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: 500px -100px, top right, bottom left, 1100px;
+}
+
+.ticket-generated>h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.ticket-generated>p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    word-spacing: 5px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.ticket-holder {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+}
+
+.ticket-holder>p{
+    rotate: 90deg;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 30px;
+    justify-self: right;
+    align-self: center;
+}
+
+.ticket-main-part {
+    display: flex;
+    align-content: center;
+    width: 500px;
+}
+
+.ticket-main-part>img {
+    z-index: -10;
+}
+
+.ticket-main-part>div {
+    position: absolute;
+    z-index: 10;
+}
+
+.ticket-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    height: auto;
+}
+
+.ticket-info>div{
+    margin-top: 50px;
+}
+
+.ticket-date {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+}
+
+.ticket-uploaded {
+    display: flex;
+    gap: 20px;
+}
+
+.ticket-names {
+    display: flex;
+    flex-direction: column;
+}
+
+.ticket-names>p {
+    font-size: 30px;
+    margin-bottom: -10px;
+}
+
+.ticket-names>img{
+    width: 30px;
+    height: 30px;
+}
+
+.ticket-flex {
+    display: flex;
+}
+
+.uploaded-img-info {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.full-logo-img {
+    width: 210px;
+    height: 30px;
+}

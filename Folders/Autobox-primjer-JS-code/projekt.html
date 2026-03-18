@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Projekt</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="projekt.css" />
+        <link rel="stylesheet" href="projektresponsive.css" />
+    </head>
+    <body>
+        <div class="loader-wrapper">
+            <span class="loader"></span>
+        </div>
+        <div id="page-content" class="hide-content">
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <div class="hamburger-menu">
+                <ul>
+                    <li>
+                        <div class="home">
+                            <a class="aa" href="">Home</a>
+                            <div class="dropdown">
+                                <img src="assets/img/Border.png" alt="border" />
+                                <div class="dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="listings">
+                            <a clas="aa" href="">Listings</a>
+                            <div class="dropdown">
+                                <img src="assets/img/Border.png" alt="border" />
+                                <div class="dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pages">
+                            <a class="aa" href="">Pages</a>
+                            <div class="dropdown">
+                                <img src="assets/img/Border.png" alt="border" />
+                                <div class="dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="about">
+                            <a class="aa" href="">About</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="contact">
+                            <a class="aa" href="">Contact</a>
+                        </div>
+                    </li>
+                    <li>
+                        <p id="num">
+                            <img src="assets/img/SVG.svg" alt="mob" /> <nobr>+75 123 456 789</nobr>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <header>
+                <nav>
+                    <img class="logo" src="assets/img/logo.svg.png" alt="logo" />
+                    <div class="home">
+                        <a class="aa" href="">Home</a>
+                        <div class="dropdown">
+                            <img src="assets/img/Border.png" alt="border" />
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listings">
+                        <a clas="aa" href="">Listings</a>
+                        <div class="dropdown">
+                            <img src="assets/img/Border.png" alt="border" />
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <a class="aa" href="">Blog</a>
+                        <div class="dropdown">
+                            <img src="assets/img/Border.png" alt="border" />
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pages">
+                        <a class="aa" href="">Pages</a>
+                        <div class="dropdown">
+                            <img src="assets/img/Border.png" alt="border" />
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about">
+                        <a class="aa" href="">About</a>
+                    </div>
+                    <div class="contact">
+                        <a class="aa" href="">Contact</a>
+                    </div>
+                    <p id="num">
+                        <img src="assets/img/SVG.svg" alt="mob" /> <nobr>+75 123 456 789</nobr>
+                    </p>
+                    <button
+                        id="sign"
+                        onclick="document.getElementById('id01').style.display='block'">
+                        <img src="assets/img/Icon.png" alt="icon" /><nobr>&nbsp&nbspSign in</nobr>
+                    </button>
+                    <a href="#" class="button">Submit&nbspListing</a>
+                </nav>
+                <!--MODAL--------------------------------------------------------------------------------------------->
+                <div id="id01" class="modal">
+                    <span
+                        onclick="document.getElementById('id01').style.display='none'"
+                        class="close"
+                        title="Close Modal"></span>
+                    <form class="modal-content" action="/action_page.php">
+                        <div class="container22">
+                            <h1>Sign In</h1>
+                            <p>Enter you'r data to create an account</p>
+                            <hr />
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" id="email" required />
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" id="psw" required />
+
+                            <label for="psw-repeat"><b>Repeat Password</b></label>
+                            <input
+                                type="password"
+                                placeholder="Repeat Password"
+                                id="psw-repeat"
+                                required />
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    checked="checked"
+                                    name="remember"
+                                    style="margin-bottom: 15px" />
+                                Remember me
+                            </label>
+
+                            <p>
+                                Agree to our
+                                <a href="#" style="color: dodgerblue">Terms & Privacy</a>.
+                            </p>
+
+                            <div class="clearfix">
+                                <button
+                                    type="button"
+                                    onclick="document.getElementById('id01').style.display='none'"
+                                    class="cancelbtn">
+                                    Cancel
+                                </button>
+                                <button type="submit" class="signup">Sign In</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </header>
+            <main>
+                <!--<div class="car">
+           <img src="assets/img/rs_image.png">-->
+
+                <!--  <div class="car-img-slider">
+               <div class="car-slide active">
+                   <img src="assets/img/rs_image.png" alt="slider">
+               </div>
+               <div class="car-slide">
+                   <img src="assets/img/rs_image.png" alt="slider">
+               </div>
+               <div class="car-slide">
+                   <img src="assets/img/big car.png" alt="slider">
+               </div>
+            </div>
+          </div>-->
+                <div class="car">
+                    <h1><nobr>Find Your Perfect Vehicle Online</nobr></h1>
+                    <p><nobr>The World Largest Used Car Dealership</nobr></p>
+                    <div class="mySlides fade">
+                        <img src="assets/img/rs_image.png" style="width: 100%" />
+                    </div>
+                    <div class="mySlides fade">
+                        <img
+                            src="assets/img/toyota-yaris-cross-2024-hub-design.webp"
+                            style="width: 100%" />
+                    </div>
+                    <div class="mySlides fade">
+                        <img
+                            src="assets/img/Bugatti-Veyron-Grand-Sport-L-Or-Blanc-169FullWidth-803e345b-511660.avif"
+                            style="width: 100%" />
+                    </div>
+
+                    <!-- Left and right buttons -->
+                    <a class="arrowleft" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="arrowright" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <!--  <div class="arrowleft">
+              <img src="assets/img/Icon (1).png" alt="arrowleft" width="63px" height="40px">
+           </div>
+           <div class="arrowright">
+              <img src="assets/img/Icon (2).png" alt="arrowright" width="63px" height="40px">
+           </div>-->
+                <!----  ------------------------------------------------------------->
+                <!----<div class="car-arrows-block">
+            <div class="car-img-left">
+                <img src="assets/img/Icon (1).png" alt="left-img">
+            </div>
+
+            <div class="car-img-right">
+                <img src="assets/img/Icon (2).png" alt="right-img">
+            </div>-->
+
+                <div class="form"></div>
+                <!--SELECT A BODY STYLE--------------------------------------------->
+                <div clas="bodystyle">
+                    <div>
+                        <h2>Select a Body Style</h2>
+                    </div>
+                    <div class="select">
+                        <div class="select1">
+                            <a href="#"><img src="assets/img/sedan.jpg.png" alt="sedan" /></a>
+                            <p>Sedan</p>
+                        </div>
+                        <div class="select1">
+                            <a href="#"><img src="assets/img/coupe.jpg.png" alt="coupe" /></a>
+                            <p>Coupe</p>
+                        </div>
+                        <div class="select1">
+                            <a href="#"><img src="assets/img/suv.jpg.png" alt="suv" /></a>
+                            <p>SUV</p>
+                        </div>
+                        <div class="select1">
+                            <a href="#"><img src="assets/img/truck.jpg.png" alt="truck" /></a>
+                            <p>Truck</p>
+                        </div>
+                        <div class="select1">
+                            <a href="#"><img src="assets/img/hat.jpg.png" alt="hatchback" /></a>
+                            <p>Hatchback</p>
+                        </div>
+                        <div class="select1">
+                            <a href="#"><img src="assets/img/mini.jpg.png" alt="convertible" /></a>
+                            <p>Convertible</p>
+                        </div>
+                    </div>
+                </div>
+                <!--WE'RE BIG ON WHAT MATTERS TO YOU--------------------------------------------------------------------------->
+                <div class="container">
+                    <div class="heading">
+                        <h2 class="big">We're Big On What<br />Matters To You</h2>
+                    </div>
+                    <div class="fd">
+                        <div class="fd1">
+                            <img
+                                src="assets/img/f-d-1.svg.png"
+                                alt="fd1"
+                                width="51px"
+                                height="60px" />
+                            <h6><nobr>Special Financing Offers</nobr></h6>
+                            <p>
+                                Our stress-free finance department that can<br />find financial
+                                solution to save you money.
+                            </p>
+                        </div>
+                        <div class="fd2">
+                            <img
+                                src="assets/img/f-d-2.svg.png"
+                                alt="fd2"
+                                width="60px"
+                                height="60px" />
+                            <h6><nobr>Trusted Car Dealership</nobr></h6>
+                            <p>
+                                Our stress-free finance department that can<br />find financial
+                                solution to save you money.
+                            </p>
+                        </div>
+                        <div class="fd3">
+                            <img
+                                src="assets/img/f-d-3.svg.png"
+                                alt="fd3"
+                                width="60px"
+                                height="60px" />
+                            <h6><nobr>Transparent Pricing</nobr></h6>
+                            <p>
+                                Our stress-free finance department that can<br />find financial
+                                solution to save you money.
+                            </p>
+                        </div>
+                        <div class="fd4">
+                            <img
+                                src="assets/img/f-d-4.svg.png"
+                                alt="fd4"
+                                width="60px"
+                                height="60px" />
+                            <h6><nobr>Expert Car Service</nobr></h6>
+                            <p>
+                                Our stress-free finance department that can<br />find financial
+                                solution to save you money.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--THE MOST SEARCHED CARS------------------------------------------->
+                <div class="heading1">
+                    <h2><nobr>The Most Searched Cars</nobr></h2>
+                    <div class="tablist">
+                        <div>
+                            <a href="#">Sedan</a>
+                            <img src="assets/img/Horizontal Divider.png" alt="horizontal divider" />
+                        </div>
+                        <div>
+                            <a href="#">SUV</a>
+                        </div>
+                        <div>
+                            <a href="#">Convertible</a>
+                        </div>
+                        <div>
+                            <a href="#">Hatchback</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container1">
+                    <article>
+                        <div class="container2">
+                            <img src="assets/img/car9-660x440.jpg.png" id="car9" />
+                            <div class="link1">
+                                <a href="#"><img src="assets/img/Icon (7).png" alt="icon" /></a>
+                            </div>
+                        </div>
+                        <div class="border">
+                            <div class="heading2">
+                                <p>T-Cross-2023</p>
+                            </div>
+                            <div class="container3">
+                                <p>4.0 D5 PowerPulse Momentum 5dr AW...</p>
+                            </div>
+                            <div class="horizontalborder">
+                                <div>
+                                    <img src="assets/img/Icon (4).png" alt="miles" />
+                                    <p><nobr>15 Miles</nobr></p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/Icon (5).png" alt="petrol" />
+                                    <p>Petrol</p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/Icon (6).png" alt="CVT" />
+                                    <p>&nbspCVT</p>
+                                </div>
+                            </div>
+                            <div class="horizontalborder2">
+                                <p>$15,000</p>
+                                <div class="link2">
+                                    <p>View Details</p>
+                                    <img
+                                        src="assets/img/SVG.png"
+                                        alt="arrow"
+                                        width="14px"
+                                        height="14px" />
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="container2">
+                            <img src="assets/img/car10-660x440.jpg.png" id="car10" />
+                            <div class="greatprice">
+                                <a href="#">Great Price</a>
+                            </div>
+                            <div class="link1">
+                                <a href="#"><img src="assets/img/Icon (7).png" alt="icon" /></a>
+                            </div>
+                        </div>
+                        <div class="border">
+                            <div class="heading2">
+                                <p>BMW X8 - 5.0</p>
+                            </div>
+                            <div class="container3">
+                                <p>4.0 D5 PowerPulse Momentum 5dr AW...</p>
+                            </div>
+                            <div class="horizontalborder">
+                                <div>
+                                    <img src="assets/img/Icon (4).png" alt="miles" />
+                                    <p><nobr>100 Miles</nobr></p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/Icon (5).png" alt="petrol" />
+                                    <p>Hybrid</p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/Icon (6).png" alt="CVT" />
+                                    <p>&nbspCVT</p>
+                                </div>
+                            </div>
+                            <div class="horizontalborder2">
+                                <p>$12,000</p>
+                                <div class="link2">
+                                    <p>View Details</p>
+                                    <img
+                                        src="assets/img/SVG.png"
+                                        alt="arrow"
+                                        width="14px"
+                                        height="14px" />
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="container2">
+                            <img src="assets/img/car11-660x440.jpg (1).png" id="car11" />
+                            <div class="sale">
+                                <a href="#">Sale</a>
+                            </div>
+                            <div class="link1">
+                                <a href="#"><img src="assets/img/Icon (7).png" alt="icon" /></a>
+                            </div>
+                        </div>
+                        <div class="border">
+                            <div class="heading2">
+                                <p><nobr>Ranger Black - 2021</nobr></p>
+                            </div>
+                            <div class="container3">
+                                <p>2.0 D5 PowerPulse Momentum 5dr AW...</p>
+                            </div>
+                            <div class="horizontalborder">
+                                <div>
+                                    <img src="assets/img/Icon (4).png" alt="miles" />
+                                    <p><nobr>250 Miles</nobr></p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/Icon (5).png" alt="petrol" />
+                                    <p>Petrol</p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/Icon (6).png" alt="CVT" />
+                                    <p>Manual</p>
+                                </div>
+                            </div>
+                            <div class="horizontalborder2">
+                                <p>
+                                    <small><del>$180,000</del></small
+                                    ><br />$165,000
+                                </p>
+                                <div class="link2">
+                                    <p>View Details</p>
+                                    <img
+                                        src="assets/img/SVG.png"
+                                        alt="arrow"
+                                        width="14px"
+                                        height="14px" />
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="container2">
+                            <img src="assets/img/car20-660x440.jpg.png" id="car20" />
+                            <div class="sale">
+                                <a href="#">Sale</a>
+                            </div>
+                            <div class="link1">
+                                <a href="#"><img src="assets/img/Icon (7).png" alt="icon" /></a>
+                            </div>
+                        </div>
+                        <div class="border">
+                            <div class="heading2">
+                                <p>Audi A4 - 2022</p>
+                            </div>
+                            <div class="container3">
+                                <p>2.0 D5 PowerPulse Momentum 5dr AW...</p>
+                            </div>
+                            <div class="horizontalborder">
+                                <div>
+                                    <img src="assets/img/Icon (4).png" alt="miles" />
+                                    <p><nobr>150 Miles</nobr></p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/Icon (5).png" alt="petrol" />
+                                    <p>Diesel</p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/Icon (6).png" alt="CVT" />
+                                    <p>&nbspCVT</p>
+                                </div>
+                            </div>
+                            <div class="horizontalborder2">
+                                <p>$120,000</p>
+                                <div class="link2">
+                                    <p>View Details</p>
+                                    <img
+                                        src="assets/img/SVG.png"
+                                        alt="arrow"
+                                        width="14px"
+                                        height="14px" />
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="arr">
+                        <button class="leftarrow" type="button">
+                            <img
+                                src="assets/img/Icon leftarrow.png"
+                                width="12px"
+                                ;
+                                height="12px"
+                                ;
+                                alt="left_arrow" />
+                        </button>
+                        <button class="rightarrow" type="button">
+                            <img
+                                src="assets/img/Icon rightarrow.png"
+                                width="12px"
+                                ;
+                                height="12px"
+                                ;
+                                alt="right_arrow" />
+                        </button>
+                    </div>
+                </div>
+                <!--ARE YOU LOOKING FOR A CAR--------------------------------------------------------------->
+                <div class="lookingsell">
+                    <div class="looking">
+                        <div class="heading3">
+                            <h3>Are You Looking<br />For a Car?</h3>
+                        </div>
+                        <p>
+                            We are committed to providing our customers with<br />exceptional
+                            service.
+                        </p>
+                        <div class="getstarted">
+                            <a href="#">Get Started</a>
+                            <img
+                                src="assets/img/SVG (1).png"
+                                alt="arrow"
+                                width="14px"
+                                ;
+                                height="14px"
+                                ; />
+                        </div>
+                        <div class="electriccar">
+                            <img src="assets/img/electric-car.svg.png" alt="electriccar" />
+                        </div>
+                    </div>
+                    <div class="sell">
+                        <div class="heading3">
+                            <h3>Do You Want to<br />Sell a Car?</h3>
+                        </div>
+                        <p>
+                            We are committed to providing our customers with<br />exceptional
+                            service.
+                        </p>
+                        <div class="getstarted" style="border: 1px #050b20; background: #050b20">
+                            <a href="#">Get Started</a>
+                            <img
+                                src="assets/img/SVG (2).png"
+                                alt="arrow"
+                                width="14px"
+                                ;
+                                height="14px"
+                                ; />
+                        </div>
+                        <div class="electriccar2">
+                            <img
+                                src="assets/img/electric-car2.svg.png"
+                                alt="electriccar2"
+                                width="110px"
+                                ;
+                                height="110px"
+                                ; />
+                        </div>
+                    </div>
+                </div>
+                <!--RECOMENDED CARS FOR YOU------------------------------------------------------->
+                <div class="recommended">
+                    <h2><nobr>&nbsp&nbspRecommended Cars For You</nobr></h2>
+                </div>
+                <div class="container10" style="margin-top: 50px">
+                    <div class="article10">
+                        <div class="container2">
+                            <img src="assets/img/car6-660x440.jpg.png" id="car6" />
+                            <div class="greatprice">
+                                <a href="#">Great Price</a>
+                            </div>
+                            <div class="link1">
+                                <a href="#"><img src="assets/img/Icon (7).png" alt="icon" /></a>
+                            </div>
+                        </div>
+                        <div class="border">
+                            <div class="heading2">
+                                <p><nobr>Mercedes-Benz, C Class</nobr></p>
+                            </div>
+                            <div class="container3">
+                                <p>2.0 D5 PowerPulse Momentum 5dr AW...</p>
+                            </div>
+                            <div class="horizontalborder">
+                                <div>
+                                    <img src="assets/img/Icon (4).png" alt="miles" />
+                                    <p><nobr>100 Miles</nobr></p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/Icon (5).png" alt="petrol" />
+                                    <p>Petrol</p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/Icon (6).png" alt="CVT" />
+                                    <p>Automatic</p>
+                                </div>
+                            </div>
+                            <div class="horizontalborder2">
+                                <p>
+                                    <small><del>$40,000</del></small
+                                    ><br />$35,000
+                                </p>
+                                <div class="link2">
+                                    <p>View Details</p>
+                                    <img
+                                        src="assets/img/SVG.png"
+                                        alt="arrow"
+                                        width="14px"
+                                        height="14px" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article10">
+                        <div class="container2">
+                            <img src="assets/img/car11-660x440.jpg.png" id="car11" />
+                            <div class="sale">
+                                <a href="#">Sale</a>
+                            </div>
+                            <div class="link1">
+                                <a href="#"><img src="assets/img/Icon (7).png" alt="icon" /></a>
+                            </div>
+                        </div>
+                        <div class="border">
+                            <div class="heading2">
+                                <p><nobr>Ranger Black-2021</nobr></p>
+                            </div>
+                            <div class="container3">
+                                <p>2.0 D5 PowerPulse Momentum 5dr AW...</p>
+                            </div>
+                            <div class="horizontalborder">
+                                <div>
+                                    <img src="assets/img/Icon (4).png" alt="miles" />
+                                    <p><nobr>250 Miles</nobr></p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/Icon (5).png" alt="petrol" />
+                                    <p>Petrol</p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/Icon (6).png" alt="CVT" />
+                                    <p>Manual</p>
+                                </div>
+                            </div>
+                            <div class="horizontalborder2">
+                                <p>
+                                    <small><del>$180,000</del></small
+                                    ><br />$165,000
+                                </p>
+                                <div class="link2">
+                                    <p>View Details</p>
+                                    <img
+                                        src="assets/img/SVG.png"
+                                        alt="arrow"
+                                        width="14px"
+                                        height="14px" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article10">
+                        <div class="container2">
+                            <img src="assets/img/car3-660x440.jpg.png" id="car3" />
+                            <div class="lowmileage">
+                                <a href="#"><nobr>Low Mileage</nobr></a>
+                            </div>
+                            <div class="link1">
+                                <a href="#"><img src="assets/img/Icon (7).png" alt="icon" /></a>
+                            </div>
+                        </div>
+                        <div class="border">
+                            <div class="heading2">
+                                <p><nobr>Ranger White-2022</nobr></p>
+                            </div>
+                            <div class="container3">
+                                <p>2.0 D5 PowerPulse Momentum 5dr AW...</p>
+                            </div>
+                            <div class="horizontalborder">
+                                <div>
+                                    <img src="assets/img/Icon (4).png" alt="miles" />
+                                    <p><nobr>30000 Miles</nobr></p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/Icon (5).png" alt="petrol" />
+                                    <p>Diesel</p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/Icon (6).png" alt="CVT" />
+                                    <p>Manual</p>
+                                </div>
+                            </div>
+                            <div class="horizontalborder2">
+                                <p>$25000</p>
+                                <div class="link2">
+                                    <p>View Details</p>
+                                    <img
+                                        src="assets/img/SVG.png"
+                                        alt="arrow"
+                                        width="14px"
+                                        height="14px" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article10">
+                        <div class="container2">
+                            <img src="assets/img/car1-660x440.jpg.png" id="car1" />
+                            <div class="greatprice">
+                                <a href="#">Great Price</a>
+                            </div>
+                            <div class="link1">
+                                <a href="#"><img src="assets/img/Icon (7).png" alt="icon" /></a>
+                            </div>
+                        </div>
+                        <div class="border">
+                            <div class="heading2">
+                                <p><nobr>Ford Explorer 2023</nobr></p>
+                            </div>
+                            <div class="container3">
+                                <p>3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                            </div>
+                            <div class="horizontalborder">
+                                <div>
+                                    <img src="assets/img/Icon (4).png" alt="miles" />
+                                    <p><nobr>10 Miles</nobr></p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/Icon (5).png" alt="petrol" />
+                                    <p>Diesel</p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/Icon (6).png" alt="CVT" />
+                                    <p>&nbspCVT</p>
+                                </div>
+                            </div>
+                            <div class="horizontalborder2">
+                                <p>$35,000</p>
+                                <div class="link2">
+                                    <p>View Details</p>
+                                    <img
+                                        src="assets/img/SVG.png"
+                                        alt="arrow"
+                                        width="14px"
+                                        height="14px" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrrec">
+                        <button class="leftarrowrec" type="button">
+                            <img
+                                src="assets/img/Icon leftarrow.png"
+                                width="12px"
+                                ;
+                                height="12px"
+                                ;
+                                alt="left_arrow" />
+                        </button>
+                        <button class="rightarrowrec" type="button">
+                            <img
+                                src="assets/img/Icon rightarrow.png"
+                                width="12px"
+                                ;
+                                height="12px"
+                                ;
+                                alt="right_arrow" />
+                        </button>
+                    </div>
+                </div>
+                <!--ONLINE IN PERSON EVERYWHERE-------------------------------------------------------------->
+                <div class="online">
+                    <img src="assets/img/h10.jpg.png" with="776px" ; height="600px" ; />
+                    <div class="heading4">
+                        <p>Online, In person,<br />everywhere</p>
+                    </div>
+                    <p class="choose">
+                        Choose from thousands of vehicles from multiple brands and buy online with
+                        Click<br />
+                        & Drive, or visit us at one of our dealerships today.
+                    </p>
+                    <div class="getstarted">
+                        <a href="#">Get Started</a>
+                        <img
+                            src="assets/img/SVG (2).png"
+                            alt="arrow"
+                            width="14px"
+                            ;
+                            height="14px"
+                            ; />
+                    </div>
+                </div>
+                <div class="statistic">
+                    <div class="data">
+                        <p
+                            clas="m"
+                            style="
+                                font-size: 38px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 53.2px;
+                                font-family: DM Sans;
+                            ">
+                            &nbsp836M
+                        </p>
+                        <p><nobr>CARS FOR SALE</nobr></p>
+                    </div>
+                    <div class="data">
+                        <p class="m">&nbsp&nbsp738M</p>
+                        <p><nobr>DEALER REVIEWS</nobr></p>
+                    </div>
+                    <div class="data">
+                        <p class="m">&nbsp&nbsp&nbsp100M</p>
+                        <p><nobr>VISITORS PER DAY</nobr></p>
+                    </div>
+                    <div class="data">
+                        <p class="m">&nbsp&nbsp&nbsp238M</p>
+                        <p><nobr>VERIFIED DEALERS</nobr></p>
+                    </div>
+                </div>
+                <!--UPCOMING CARS---------------------------------------------------------------------------->
+                <div class="upcoming">
+                    <h2><nobr>Upcoming Cars</nobr></h2>
+                </div>
+                <div class="container20">
+                    <div class="article20">
+                        <div class="container2">
+                            <img src="assets/img/car9-660x440.jpg.png" id="car9" />
+                            <div class="link1">
+                                <a href="#"><img src="assets/img/Icon (7).png" alt="icon" /></a>
+                            </div>
+                        </div>
+                        <div class="border">
+                            <div class="heading2">
+                                <p>T-Cross-2023</p>
+                            </div>
+                            <div class="container3">
+                                <p>4.0 D5 PowerPulse Momentum 5dr AW...</p>
+                            </div>
+                            <div class="horizontalborder">
+                                <div>
+                                    <img src="assets/img/Icon (4).png" alt="miles" />
+                                    <p><nobr>15 Miles</nobr></p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/Icon (5).png" alt="petrol" />
+                                    <p>Petrol</p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/Icon (6).png" alt="CVT" />
+                                    <p>&nbspCVT</p>
+                                </div>
+                            </div>
+                            <div class="horizontalborder2">
+                                <p>$15,000</p>
+                                <div class="link2">
+                                    <p>View Details</p>
+                                    <img
+                                        src="assets/img/SVG.png"
+                                        alt="arrow"
+                                        width="14px"
+                                        height="14px" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article20">
+                        <div class="container2">
+                            <img src="assets/img/car14-660x440.jpg.png" id="car14" />
+                            <div class="link1">
+                                <a href="#"><img src="assets/img/Icon (7).png" alt="icon" /></a>
+                            </div>
+                        </div>
+                        <div class="border">
+                            <div class="heading2">
+                                <p><nobr>C-Class-2023</nobr></p>
+                            </div>
+                            <div class="container3">
+                                <p>4.0 D5 PowerPulse Momentum 5dr AW...</p>
+                            </div>
+                            <div class="horizontalborder">
+                                <div>
+                                    <img src="assets/img/Icon (4).png" alt="miles" />
+                                    <p><nobr>50 Miles</nobr></p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/Icon (5).png" alt="petrol" />
+                                    <p>Petrol</p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/Icon (6).png" alt="CVT" />
+                                    <p>Automatic</p>
+                                </div>
+                            </div>
+                            <div class="horizontalborder2">
+                                <p>$150,000</p>
+                                <div class="link2">
+                                    <p>View Details</p>
+                                    <img
+                                        src="assets/img/SVG.png"
+                                        alt="arrow"
+                                        width="14px"
+                                        height="14px" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article20">
+                        <div class="container2">
+                            <img src="assets/img/car13-660x440.jpg.png" id="car13" />
+                            <div class="greatprice">
+                                <a href="#">Great Price</a>
+                            </div>
+                            <div class="link1">
+                                <a href="#"><img src="assets/img/Icon (7).png" alt="icon" /></a>
+                            </div>
+                        </div>
+                        <div class="border">
+                            <div class="heading2">
+                                <p><nobr>Ford-Transit-2021</nobr></p>
+                            </div>
+                            <div class="container3">
+                                <p>4.0 D5 PowerPulse Momentum 5dr AW...</p>
+                            </div>
+                            <div class="horizontalborder">
+                                <div>
+                                    <img src="assets/img/Icon (4).png" alt="miles" />
+                                    <p><nobr>2500 Miles</nobr></p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/Icon (5).png" alt="petrol" />
+                                    <p>Diesel</p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/Icon (6).png" alt="CVT" />
+                                    <p>Manual</p>
+                                </div>
+                            </div>
+                            <div class="horizontalborder2">
+                                <p style="line-height: 0.7">$22,000</p>
+                                <div class="link2">
+                                    <p>View Details</p>
+                                    <img
+                                        src="assets/img/SVG.png"
+                                        alt="arrow"
+                                        width="14px"
+                                        height="14px" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article20">
+                        <div class="container2">
+                            <img src="assets/img/car19-660x440.jpg.png" id="car19" />
+                            <div class="lowmileage">
+                                <a href="#"><nobr>Low Mileage</nobr></a>
+                            </div>
+                            <div class="link1">
+                                <a href="#"><img src="assets/img/Icon (7).png" alt="icon" /></a>
+                            </div>
+                        </div>
+                        <div class="border">
+                            <div class="heading2">
+                                <p><nobr>New GLC-2023</nobr></p>
+                            </div>
+                            <div class="container3">
+                                <p>4.0 D5 PowerPulse Momentum 5dr AW...</p>
+                            </div>
+                            <div class="horizontalborder">
+                                <div>
+                                    <img src="assets/img/Icon (4).png" alt="miles" />
+                                    <p><nobr>50 Miles</nobr></p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/Icon (5).png" alt="petrol" />
+                                    <p>Petrol</p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/Icon (6).png" alt="CVT" />
+                                    <p>Automatic</p>
+                                </div>
+                            </div>
+                            <div class="horizontalborder2">
+                                <p>$95,000</p>
+                                <div class="link2">
+                                    <p>View Details</p>
+                                    <img
+                                        src="assets/img/SVG.png"
+                                        alt="arrow"
+                                        width="14px"
+                                        height="14px" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrup">
+                        <button class="leftarrowup" type="button">
+                            <img
+                                src="assets/img/Icon leftarrow.png"
+                                width="12px"
+                                ;
+                                height="12px"
+                                ;
+                                alt="left_arrow" />
+                        </button>
+                        <button class="rightarrowup" type="button">
+                            <img
+                                src="assets/img/Icon rightarrow.png"
+                                width="12px"
+                                ;
+                                height="12px"
+                                ;
+                                alt="right_arrow" />
+                        </button>
+                    </div>
+                </div>
+                <!--WHAT OUR CUSTOMERS SAY---------------------------------------------------------------------------------------------------------------------------->
+                <div class="customers">
+                    <div class="leftcust">
+                        <div class="heading5">
+                            <h2>What Our <br />Customers Say</h2>
+                        </div>
+                        <p class="great">Great</p>
+                        <img
+                            src="assets/img/stars.png.png"
+                            alt="stars"
+                            width="200px"
+                            height="38px" />
+                        <div class="based">
+                            <span
+                                ><p>Based on&nbsp</p>
+                                <p>5,801 reviews</p></span
+                            >
+                        </div>
+                        <img src="assets/img/trustpilot.png.png" alt="trustpilot" ; />
+                    </div>
+                    <div class="rightcust">
+                        <div clas="buttons">
+                            <div class="arr1">
+                                <button class="leftarrow1" type="button">
+                                    <img
+                                        src="assets/img/Icon (8).png"
+                                        width="12px"
+                                        ;
+                                        height="12px"
+                                        ;
+                                        alt="left_arrow" />
+                                </button>
+                            </div>
+                            <div class="arr1">
+                                <button class="rightarrow1" type="button">
+                                    <img
+                                        src="assets/img/Icon leftarrow.png"
+                                        width="12px"
+                                        ;
+                                        height="12px"
+                                        ;
+                                        alt="right_arrow" />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="rightcust1">
+                            <span>
+                                <div class="backgr">
+                                    <img src="assets/img/Symbol.png" alt="star" />
+                                </div>
+                                <div class="backgr">
+                                    <img src="assets/img/Symbol.png" alt="star" />
+                                </div>
+                                <div class="backgr">
+                                    <img src="assets/img/Symbol.png" alt="star" />
+                                </div>
+                                <div class="backgr">
+                                    <img src="assets/img/Symbol.png" alt="star" />
+                                </div>
+                                <div class="backgr">
+                                    <img src="assets/img/Symbol.png" alt="star" />
+                                </div>
+                                <p>&nbsp&nbsp&nbsp</p>
+                                <div class="backg">
+                                    <img src="assets/img/Symbol (1).png" alt="check" />
+                                </div>
+                                <p>&nbspVerified</p>
+                            </span>
+                            <p class="ali"><nobr>Ali TUFAN</nobr></p>
+                            <p class="designer">Designer</p>
+                            <p class="textreview">
+                                I'd suggest Macklin Motors Nissan Glasgow South to a friend<br />
+                                because I had great service from my salesman Patrick and all<br />
+                                of the team.
+                            </p>
+
+                            <div class="team">
+                                <div class="border1 blueborder">
+                                    <img src="assets/img/team6-150x150.jpg.png" alt="women" />
+                                </div>
+                                <div class="border1 noborder">
+                                    <img src="assets/img/team8-150x150.jpg.png" alt="bachelor" />
+                                </div>
+                                <div class="border1 noborder">
+                                    <img src="assets/img/team5-150x150.jpg.png" alt="men" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--LATEST BLOG POSTS------------------------------------------------------------------->
+                <div class="heading6">
+                    <h2>Latest Blog Posts</h2>
+                    <a href="#">View All&nbsp&nbsp&nbsp<img src="assets/img/SVG (3).png" /></a>
+                </div>
+
+                <div class="bmwcars">
+                    <div class="cont">
+                        <div class="artickle1">
+                            <div class="cont1">
+                                <img
+                                    src="assets/img/detail-post-qgcqjbpfnsa2eljzsmpa5fzwhwfyhukx3izjwiox88.jpg.png"
+                                    width="447px"
+                                    ;
+                                    height="298px"
+                                    ;
+                                    alt="BMW Alpina" />
+                                <div class="back">
+                                    <a href="#"><p>&nbsp&nbsp&nbsp&nbspSound</p></a>
+                                </div>
+                            </div>
+                            <div class="admin">
+                                <a href="#">Admin&nbsp&nbsp</a>
+                                <div class="dot"></div>
+                                <p><nobr>&nbsp&nbspNovember 22, 2023</nobr></p>
+                            </div>
+                            <p class="bmw">
+                                2024 BMW ALPINA XB7 with exclusive details,<br />extraordinary
+                            </p>
+                        </div>
+                        <div class="artickle1">
+                            <div class="cont1">
+                                <img
+                                    src="assets/img/blog9-qgcqjcn9umbcq7imn53wpxrd3abbpjonfnn1dsnj20.jpg.png"
+                                    width="447px"
+                                    ;
+                                    height="298px"
+                                    ;
+                                    alt="BMW Alpina" />
+                                <div class="back">
+                                    <a href="#"><p>Accessories</p></a>
+                                </div>
+                            </div>
+                            <div class="admin">
+                                <a href="#">Admin&nbsp&nbsp</a>
+                                <div class="dot"></div>
+                                <p><nobr>&nbsp&nbspNovember 22, 2023</nobr></p>
+                            </div>
+                            <p class="bmw">
+                                2024 BMW ALPINA XB7 with exclusive details,<br />extraordinary
+                            </p>
+                        </div>
+                        <div class="artickle1">
+                            <div class="cont1">
+                                <img
+                                    src="assets/img/blog7-qgcqjcn9umbcq7imn53wpxrd3abbpjonfnn1dsnj20.jpg.png"
+                                    width="447px"
+                                    ;
+                                    height="298px"
+                                    ;
+                                    alt="BMW Alpina" />
+                                <div class="back">
+                                    <a href="#" style="width: 81.45px; height: 35.89px"
+                                        ><p id="exterior">Exterior</p></a
+                                    >
+                                </div>
+                            </div>
+                            <div class="admin">
+                                <a href="#" style="text-decoration: none; color: black"
+                                    >Admin&nbsp&nbsp</a
+                                >
+                                <div class="dot"></div>
+                                <p><nobr>&nbsp&nbspNovember 22, 2023</nobr></p>
+                            </div>
+                            <p class="bmw">
+                                2024 BMW ALPINA XB7 with exclusive details,<br />extraordinary
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--EXPLORE OUR PREMIUM BRANDS----------------------------------------------------------------------------------------------->
+                <div class="heading6 heading60">
+                    <h2>Explore Our Premium Brends</h2>
+                    <a href="#" style="color: black"
+                        >Show All Brends&nbsp&nbsp&nbsp<img src="assets/img/SVG (3).png"
+                    /></a>
+                </div>
+                <div class="explore">
+                    <div class="container4">
+                        <div class="container5">
+                            <a href="#" class="link3">
+                                <img
+                                    src="assets/img/b1.jpg.png"
+                                    width="100px"
+                                    ;
+                                    height="100px"
+                                    ;
+                                    alt="Audi" />
+                                <p class="ali mark1">Audi</p>
+                            </a>
+                        </div>
+                        <div class="container5">
+                            <a href="#" class="link3">
+                                <img
+                                    src="assets/img/b2.jpg.png"
+                                    width="100px"
+                                    ;
+                                    height="100px"
+                                    ;
+                                    alt="BMW" />
+                                <p class="ali mark1">BMW</p>
+                            </a>
+                        </div>
+                        <div class="container5">
+                            <a href="#" class="link3">
+                                <img
+                                    src="assets/img/b3.jpg.png"
+                                    width="100px"
+                                    ;
+                                    height="100px"
+                                    ;
+                                    alt="Ford" />
+                                <p class="ali mark1">Ford</p>
+                            </a>
+                        </div>
+                        <div class="container5">
+                            <a href="#" class="link3">
+                                <img
+                                    src="assets/img/b4.jpg.png"
+                                    width="100px"
+                                    ;
+                                    height="100px"
+                                    ;
+                                    alt="Mercedes Benz" />
+                                <p class="ali mark2"><nobr>Mercedes Benz</nobr></p>
+                            </a>
+                        </div>
+                        <div class="container5">
+                            <a href="#" class="link3">
+                                <img
+                                    src="assets/img/b5.jpg.png"
+                                    width="100px"
+                                    ;
+                                    height="100px"
+                                    ;
+                                    alt="Peugeot" />
+                                <p class="ali mark3">Peugeot</p>
+                            </a>
+                        </div>
+                        <div class="container5">
+                            <a href="#" class="link3">
+                                <img
+                                    src="assets/img/b6.jpg.png"
+                                    width="100px"
+                                    ;
+                                    height="100px"
+                                    ;
+                                    alt="Volkswagen" />
+                                <p class="ali mark4">Volkswagen</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--HAVE MORE QUESTION------------------------------------------------------------------->
+                <div class="container6">
+                    <img
+                        src="assets/img/h74.jpg.png"
+                        alt="girl"
+                        width="616.5px"
+                        ;
+                        height="540.11px"
+                        ; />
+                    <div class="right1">
+                        <div class="heading7">
+                            <h2>
+                                <nobr>Have More Questions? Don't</nobr
+                                ><nobr>Hesitate To Reach Us</nobr>
+                            </h2>
+                        </div>
+                        <div class="addres">
+                            <p>
+                                <nobr>123 Queensberry Streeth, North </nobr><br /><nobr
+                                    >Melbourne VIC 3051, Australia.</nobr
+                                >
+                            </p>
+                        </div>
+                        <div class="link45">
+                            <div class="link4">
+                                <a href="#"
+                                    ><img
+                                        src="assets/img/SVG.svg"
+                                        style="vertical-align: sub"
+                                        alt="mob" />&nbsp&nbsp&nbsp+76 956 039 999</a
+                                >
+                            </div>
+                            <div class="link5">
+                                <a href="#"
+                                    ><img
+                                        src="assets/img/SVG (4).png"
+                                        style="vertical-align: sub"
+                                        alt="mail" />&nbsp&nbsp&nbspali@boxcars.com</a
+                                >
+                            </div>
+                        </div>
+                        <div class="getstarted">
+                            <a href="#" class="getstarted10">Get Started</a>
+                            <img
+                                src="assets/img/SVG (2).png"
+                                alt="arrow"
+                                width="14px"
+                                ;
+                                height="14px"
+                                ; />
+                        </div>
+                    </div>
+                </div>
+                <!--FOOTER------------------------------------------------------------------------------------------------------------------------------------->
+                <footer>
+                    <div class="company">
+                        <p class="bmw">Company</p>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="quick">
+                        <p class="bmw">Quick Links</p>
+                        <ul>
+                            <li><a href="#">Get in Touch</a></li>
+                            <li><a href="#">Help center</a></li>
+                            <li><a href="#">Live chat</a></li>
+                            <li><a href="#">How it Works</a></li>
+                        </ul>
+                    </div>
+                    <div class="our">
+                        <p class="bmw">Our Brands</p>
+                        <ul>
+                            <li><a href="#">Toyota</a></li>
+                            <li><a href="#">Porsche</a></li>
+                            <li><a href="#">Audi</a></li>
+                            <li><a href="#">BMW</a></li>
+                            <li><a href="#">Ford</a></li>
+                            <li><a href="#">Nissan</a></li>
+                            <li><a href="#">Peugeot</a></li>
+                            <li><a href="#">Volkswagen</a></li>
+                        </ul>
+                    </div>
+                    <div class="vehicles">
+                        <p class="bmw">Vehicles Type</p>
+                        <ul>
+                            <li><a href="#">Sedan</a></li>
+                            <li><a href="#">Hatchback</a></li>
+                            <li><a href="#">SUV</a></li>
+                            <li><a href="#">Hybrid</a></li>
+                            <li><a href="#">Electric</a></li>
+                            <li><a href="#">Coupe</a></li>
+                            <li><a href="#">Truck</a></li>
+                            <li><a href="#">Convertible</a></li>
+                        </ul>
+                    </div>
+                    <div class="salehours">
+                        <p class="bmw">Sale Hours</p>
+                        <div class="hours">
+                            <p><nobr>Monday-Friday 09:00AM-09:00PM</nobr></p>
+                            <p><nobr>Saturday:09:AM-07:00PM</nobr></p>
+                            <p><nobr>Sunday:Closed</nobr></p>
+                        </div>
+                        <p class="bmw connect"><nobr>Connect With Us</nobr></p>
+                        <div clas="networks">
+                            <ul>
+                                <li class="socnet">
+                                    <a href="#"><img id="a" src="assets/img/Symbol f.png" /></a>
+                                </li>
+                                <li class="socnet">
+                                    <a href="#"><img id="b" src="assets/img/Symbol (2).png" /></a>
+                                </li>
+                                <li class="socnet">
+                                    <a href="#"><img id="c" src="assets/img/Symbol (3).png" /></a>
+                                </li>
+                                <li class="socnet">
+                                    <a href="#"><img id="d" src="assets/img/Symbol (4).png" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+                <div class="last">
+                    <p>&copy 2024 example.com. All rights reserved.</p>
+                    <div class="terms">
+                        <p>Terms & Conditions</p>
+                        <div class="dot1"></div>
+                        <p>Privacy Notice</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="projekt.js"></script>
+    </body>
+</html>

@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: #0A1A32;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.container {
+    margin-right: 84px;
+    margin-left: 200px;
+}
+
+header {
+    height: 56px;
+    margin-top: 61px;
+}
+
+.logo {
+    width: 228px;
+    height: 55px;
+}
+
+nav, .logo {
+    display: inline-block;
+}
+
+nav {
+    float: right;
+}
+
+a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    /*margin-right: 49px;*/
+}
+
+a:not(:first-child) {
+    margin-left: 48px;
+}
+
+.pink {
+    padding: 10px 25px;
+    border: 1px solid #000; 
+    background: #F29494;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+section {
+    margin-top: 11px;
+}
+
+.left {
+    margin-top: 115px;
+}
+
+.left, .right {
+    max-width: 900px;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h3 {
+    color: #EF9C9C;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    /*opacity: 0.5;*/
+    margin-top: 19px;
+    margin-bottom: 45px;
+}
+
+p {
+    color: #D8D8D8;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: normal;
+    max-width: 532px;
+}
+
+.watch-holder {
+    margin-top: 50px;
+}
+
+.watch {
+    border-radius: 41px;
+    background: #2B3544;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.10);
+    width: 306px;
+    height: 372px;
+
+    display: inline-block;
+}
+
+.watch > h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: normal;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.watch > span {
+    font-size: 20px;
+    font-weight: 250;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-left: 150px;
+    margin-top: -12px;
+    display: block;
+}
+
+.watch > img {
+    width: 293px;
+    height: 293px;
+}
+
+.watch:first-child {
+    margin-right: 40px;
+}
+
+/*
+.right > img{
+    width: 956px;
+    height: 910px;
+}

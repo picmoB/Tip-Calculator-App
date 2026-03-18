@@ -1,0 +1,1940 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #fff;
+}
+
+.maxw {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 30px;
+}
+
+.top-left > a:not(:first-child) {
+    margin-left: 40px;
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+}
+
+.top-left > a {
+    color: #050b20;
+
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27.75px; /* 185% */
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+}
+
+.top-right > a {
+    color: #050b20;
+
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27.75px; /* 185% */
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.top-right-btn {
+    margin-left: 30px;
+
+    border-radius: 16px;
+    border: 1px solid #050b20;
+    background: #fff;
+
+    display: flex;
+    width: 152.86px;
+    height: 47.75px;
+    padding: 9.125px 25.644px 10.875px 26px;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.intro h4,
+.intro.p {
+    margin: 0 auto;
+}
+.intro-img-slider {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+.intro-slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+/* Kasnije zakomentirat */
+.intro-slide>h4{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.intro-slide>p{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.intro-slide.active {
+    opacity: 1;
+}
+.intro-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* .intro-img {
+    background-image: url("../img/header-image.png"); 
+    width: 1400px;
+    height: 660px;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+    box-sizing: border-box;
+} */
+
+.intro-arrows-block {
+    margin-bottom: 200px;
+    
+    position: absolute;
+    width: 70%;
+    bottom: 30%;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    /*background-color: #000;*/
+}
+
+/* .intro-img-left {
+    margin-left: 30px;
+    width: 63px;
+    height: 40px;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.20);
+}
+
+.intro-img-right {
+    margin-right: 30px;
+    width: 63px;
+    height: 40px;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.20);
+} */
+.intro-img-right,
+.intro-img-left {
+    width: 63px;
+    height: 40px;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.intro-img-right:hover,
+.intro-img-left:hover {
+    background: yellow;
+    transition: 0.5s ease-in-out;
+}
+/*
+.intro-gap {
+    display: flex;
+    width: 1580px;
+    padding: 115px 0px 196.25px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    background: #FFF;
+}
+*/
+.intro-img > h4 {
+    margin-left: auto;
+    margin-right: auto;
+
+    color: #fff;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 100% */
+}
+
+.intro-img > p {
+    /*padding-bottom: 340px;*/
+
+    margin-top: 50px;
+    margin-bottom: 90px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 52px; /* 100% */
+}
+
+.intro-car-type {
+    background-color: #fff;
+    width: 1920px;
+    height: 590px;
+    margin-top: -100px;
+}
+
+.intro-cars > h4 {
+    padding-top: 115px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    /*
+    display: flex;
+    width: 377.157px;
+    height: 40px;
+    flex-direction: column;
+    justify-content: center;
+    */
+    color: #050b20;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 100% */
+}
+
+.intro-car-holder {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 64px;
+}
+
+.intro-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-block > p {
+    color: #050b20;
+
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21.6px; /* 120% */
+}
+
+.boxcars-offerings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxcars-offerings-left > h4 {
+    margin-top: 115px;
+    margin-left: 90px;
+
+    width: 366.62px;
+    height: 96px;
+
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 120% */
+    text-transform: capitalize;
+}
+
+.boxcars-offerings-right {
+    margin-top: 115px;
+
+    width: 670px;
+
+    display: flex;
+    /*align-items: center;*/
+    flex-wrap: wrap;
+    gap: 45px;
+}
+
+.boxcars-offerings-block > img {
+    margin-bottom: 20px;
+}
+
+.boxcars-offerings-block > h4 {
+    margin-bottom: 15px;
+
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+}
+
+.boxcars-offerings-block > p {
+    width: 311.28px;
+    height: 55.5px;
+
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.75px; /* 185% */
+}
+
+.most-searched-cars {
+    margin-top: 230px;
+}
+
+.most-searched-cars > h4 {
+    margin-bottom: 40px;
+
+    color: #050b20;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 100% */
+}
+
+.most-searched-cars-tabs {
+    margin-bottom: 60px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.most-searched-cars-tabs > p {
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29.6px; /* 185% */
+}
+
+.most-searched-cars-tabs > p:not(:first-child) {
+    margin-left: 30px;
+}
+
+.most-searched-cars-tabs > p:hover {
+    cursor: pointer;
+}
+
+.msc-div::after {
+    content: "";
+    width: 47.17px;
+    height: 2px;
+    flex-shrink: 0;
+
+    background: #405ff2;
+    display: flex;
+    position: absolute;
+}
+
+.most-searched-cars-holder {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.most-searched-cars-img-1 {
+    background-image: url(/Autobox/assets/img/car9-660x440.jpg.png);
+    width: 328px;
+    height: 220px;
+
+    display: flex;
+    justify-content: end;
+}
+
+.most-searched-cars-img-2 {
+    background-image: url(/Autobox/assets/img/car10-660x440.jpg.png);
+    width: 328px;
+    height: 220px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.msc-img-left-green {
+    margin-top: 20px;
+    margin-left: 20px;
+
+    border-radius: 30px;
+    background: #3d923a;
+    width: 104.23px;
+    height: 29.9px;
+}
+
+.msc-img-left-green > h4 {
+    padding-top: 3px;
+
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.9px; /* 185% */
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.msc-img-right {
+    margin-top: 20px;
+    margin-right: 20px;
+
+    border-radius: 18px;
+    background: #fff;
+
+    width: 36px;
+    height: 36px;
+}
+
+.msc-img-right > img {
+    padding: 12px;
+}
+
+.most-searched-cars-img-3 {
+    background-image: url(/Autobox/assets/img/car11-660x440.jpg.png);
+    width: 328px;
+    height: 220px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.most-searched-cars-img-4 {
+    background-image: url(/Autobox/assets/img/car13-660x440.jpg.png);
+    width: 328px;
+    height: 220px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.msc-img-left-blue {
+    margin-top: 20px;
+    margin-left: 20px;
+
+    border-radius: 30px;
+    background: #405ff2;
+
+    width: 57.47px;
+    height: 29.9px;
+}
+
+.msc-img-left-blue > h4 {
+    padding-top: 3px;
+
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.9px; /* 185% */
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.most-searched-cars-block {
+    width: 328px;
+    height: 433.14px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.most-searched-cars-block > h4 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    padding-left: 31px;
+    padding-right: 31px;
+
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21.6px; /* 120% */
+}
+
+.most-searched-cars-block > p {
+    padding-left: 31px;
+    padding-right: 31px;
+
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 100% */
+}
+
+.msc-icons {
+    margin-left: 30px;
+
+    width: 266px;
+    height: 69.29px;
+    /*
+    display: grid;
+    grid-template-columns: auto auto auto;
+    */
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.msc-icon-set {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.msc-icon-set > img {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+
+    margin-bottom: 10px;
+}
+
+.msc-icon-set > p {
+    color: #050b20;
+
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 100% */
+}
+
+.msc-prices {
+    margin-left: 30px;
+
+    width: 266px;
+    /*
+    display: grid;
+    grid-template-columns: auto auto;
+    */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.msc-prices > h4 {
+    color: #050b20;
+
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 150% */
+}
+
+.msc-grid > h4 {
+    color: #050b20;
+
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 150% */
+}
+
+.msc-grid > h5 {
+    color: #050b20;
+
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px; /* 150% */
+    text-decoration-line: line-through;
+}
+
+.msc-price-detail {
+    color: #405ff2;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27.75px; /* 185% */
+}
+
+.most-searched-cars-below {
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.car-deals {
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.car-deals-block {
+    width: 685px;
+    height: 393.72px;
+    flex-shrink: 0;
+
+    box-sizing: border-box;
+    border-radius: 16px;
+    background: #e9f2ff;
+}
+
+.car-deals-block > h4 {
+    padding-top: 80px;
+    padding-left: 80px;
+
+    margin-bottom: 15px;
+
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px; /* 150% */
+}
+
+.car-deals-block > p {
+    margin-bottom: 15px;
+    padding-left: 80px;
+
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.75px; /* 185% */
+}
+
+.car-deals-block > .cdb-btn-1 {
+    margin-left: 80px;
+
+    width: 158.94px;
+    height: 59.995px;
+
+    border-radius: 12px;
+    border: 1px solid #405ff2;
+    background: #405ff2;
+    color: #fff;
+}
+
+.car-deals-block > .cdb-btn-2 {
+    margin-left: 80px;
+
+    width: 158.94px;
+    height: 59.995px;
+
+    border-radius: 12px;
+    border: 1px solid #050b20;
+    background: #050b20;
+    color: #fff;
+}
+
+.car-deals-block > img {
+    margin-left: 495px;
+
+    padding-right: 80px;
+    padding-bottom: 50px;
+}
+
+.recommended-cars {
+    margin-top: 150px;
+}
+
+.recommended-cars > h4 {
+    color: #050b20;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 100% */
+}
+
+.rc-cars-img-1 {
+    background-image: url(/Autobox/assets/img/car6-660x440.jpg.png);
+    width: 328px;
+    height: 220px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.rc-cars-left-green {
+    margin-top: 20px;
+    margin-left: 20px;
+
+    border-radius: 30px;
+    background: #3d923a;
+
+    width: 104.23px;
+    height: 29.89px;
+}
+
+.rc-cars-left-green > h4 {
+    margin-top: 3px;
+
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.9px; /* 185% */
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.rc-cars-right {
+    margin-top: 20px;
+    margin-right: 20px;
+
+    border-radius: 18px;
+    background: #fff;
+    width: 36px;
+    height: 36px;
+}
+
+.rc-cars-right > img {
+    padding: 12px;
+}
+
+.rc-cars-img-2 {
+    background-image: url(/Autobox/assets/img/car11-660x440.jpg.png);
+    width: 328px;
+    height: 220px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.rc-cars-img-3 {
+    background-image: url(/Autobox/assets/img/car3-660x440.jpg.png);
+    width: 328px;
+    height: 220px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.rc-cars-img-4 {
+    background-image: url(/Autobox/assets/img/car1-660x440.jpg.png);
+    width: 328px;
+    height: 220px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.rc-cars-left-blue {
+    margin-top: 20px;
+    margin-left: 20px;
+
+    border-radius: 30px;
+    background: #405ff2;
+
+    width: 57.47px;
+    height: 29.89px;
+}
+
+.rc-cars-left-blue > h4 {
+    margin-top: 3px;
+
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.9px; /* 185% */
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.rc-cars-left-blue-2 {
+    margin-top: 20px;
+    margin-left: 20px;
+
+    border-radius: 30px;
+    background: #405ff2;
+
+    width: 110.38px;
+    height: 29.89px;
+}
+
+.rc-cars-left-blue-2 > h4 {
+    margin-top: 3px;
+
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.9px; /* 185% */
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.recommended-cars-holder {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+
+    margin-top: 40px;
+    /*
+    display: flex;
+    justify-content: space-between;
+    */
+}
+
+.recommended-cars-block {
+    width: 328px;
+    height: 454.14px;
+
+    box-sizing: border-box;
+}
+
+.recommended-cars-info {
+    margin-top: 15px;
+}
+
+.recommended-cars-info > h4 {
+    margin-bottom: 5px;
+
+    padding-left: 31px;
+    padding-right: 31px;
+}
+
+.recommended-cars-info > p {
+    padding-left: 31px;
+    padding-right: 31px;
+}
+
+.recommended-cars-info > h4 {
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21.6px; /* 120% */
+}
+
+.recommended-cars-info > p {
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 100% */
+}
+
+.rc-icons {
+    padding-left: 31px;
+    padding-right: 31px;
+
+    margin-top: 15px;
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.rc-icon-set {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rc-icon-set > p {
+    margin-top: 10px;
+
+    color: #050b20;
+
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 100% */
+}
+
+.rc-prices {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 31px;
+    padding-right: 31px;
+}
+
+.rc-prices > h4 {
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 150% */
+}
+
+.rc-prices > p {
+    color: #405ff2;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27.75px; /* 185% */
+}
+
+.rc-prices-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.rc-prices-grid > p {
+    color: #050b20;
+
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 150% */
+}
+
+.rc-prices-grid > .rc-old-price {
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px; /* 150% */
+    text-decoration-line: line-through;
+}
+
+.recommended-cars-below {
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.buy-car-online {
+    margin-top: 130px;
+
+    width: 1580px;
+    height: 600px;
+    flex-shrink: 0;
+
+    background: #050b20;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy-car-online-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding-right: 30px;
+}
+
+.buy-car-online-right > h4 {
+    margin-bottom: 30px;
+
+    color: #fff;
+
+    /*text-align: center;*/
+    display: flex;
+    justify-content: center;
+
+    font-family: sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px; /* 140% */
+}
+
+.buy-car-online-right > p {
+    margin-bottom: 30px;
+    color: #fff;
+
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.75px; /* 185% */
+}
+
+.buy-car-online-right > button {
+    width: 158.94px;
+    height: 53.22px;
+
+    color: #fff;
+    background: #050b20;
+    border-radius: 12px;
+    border: 1px solid #fff;
+}
+
+.buy-car-online-numbers {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 1580px;
+    height: 307.69px;
+    flex-shrink: 0;
+
+    border-bottom: 1px solid #e1e1e1;
+    background: #fff;
+}
+
+.buy-car-online-numbers-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-car-online-numbers-block > h4 {
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 53.2px; /* 140% */
+}
+
+.buy-car-online-numbers-block > p {
+    color: #050b20;
+    /*text-align: center;*/
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37.5px; /* 250% */
+}
+
+.upcoming-cars > h4 {
+    margin-top: 170px;
+    margin-bottom: 40px;
+
+    color: #050b20;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 100% */
+}
+
+.upcoming-cars-holder {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+
+    margin-bottom: 90px;
+}
+
+.upcoming-cars-img-1 {
+    background-image: url(/Autobox/assets/img/car9-660x440.jpg.png);
+    width: 328px;
+    height: 218.65px;
+
+    display: flex;
+    justify-content: end;
+}
+
+.upcoming-cars-img-2 {
+    background-image: url(/Autobox/assets/img/car14-660x440.jpg.png);
+    width: 328px;
+    height: 218.65px;
+
+    display: flex;
+    justify-content: end;
+}
+
+.upcoming-cars-img-3 {
+    background-image: url(/Autobox/assets/img/car13-660x440.jpg.png);
+    width: 328px;
+    height: 218.65px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.upcoming-cars-img-4 {
+    background-image: url(/Autobox/assets/img/car19-660x440.jpg.png);
+    width: 328px;
+    height: 218.65px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.uc-cars-left-green {
+    margin-top: 20px;
+    margin-left: 20px;
+
+    border-radius: 30px;
+    background: #3d923a;
+
+    width: 104.23px;
+    height: 29.89px;
+}
+
+.uc-cars-left-green > p {
+    padding-top: 3px;
+
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.9px; /* 185% */
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.uc-cars-left-blue {
+    margin-top: 20px;
+    margin-left: 20px;
+
+    border-radius: 30px;
+    background: #405ff2;
+
+    width: 110.38px;
+    height: 29.89px;
+}
+
+.uc-cars-left-blue > p {
+    padding: 3px;
+
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.9px; /* 185% */
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.uc-cars-right {
+    margin-top: 20px;
+    margin-right: 20px;
+
+    width: 36px;
+    height: 36px;
+
+    border-radius: 18px;
+    background: #fff;
+}
+
+.uc-cars-right > img {
+    padding: 12px;
+}
+
+.upcoming-cars-info {
+    width: 328px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.upcoming-cars-info > h4 {
+    margin-top: 15px;
+    margin-left: 31px;
+    margin-bottom: 10px;
+
+    /*
+    width: 133.383px;
+    height: 21.6px;
+    */
+
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21.6px; /* 120% */
+}
+
+.upcoming-cars-info > p {
+    margin-left: 31px;
+
+    width: 257.7px;
+    height: 28px;
+
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 100% */
+}
+
+.uc-icons {
+    margin-top: 10px;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.uc-icon-set {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.uc-icon-set > img {
+    margin-bottom: 10px;
+
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.uc-icon-set > p {
+    color: #050b20;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 100% */
+}
+
+.uc-cars-prices {
+    margin-top: 30px;
+    margin-left: 31px;
+
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.uc-cars-prices > h4 {
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 150% */
+}
+
+.uc-cars-prices > p {
+    color: #405ff2;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27.75px; /* 185% */
+}
+
+.upcoming-cars-below {
+    margin-top: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.customers-feedback {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 115px;
+    margin-bottom: 115px;
+}
+
+.customers-feedback-left {
+}
+
+.customers-feedback-left > h4 {
+    margin-bottom: 50px;
+
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 120% */
+    text-transform: capitalize;
+}
+
+.customers-feedback-left > h2 {
+    margin-bottom: 20px;
+
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 100% */
+}
+
+.txt-block {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    display: flex;
+    gap: 5px;
+}
+
+.txt-01 {
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px; /* 100% */
+}
+
+.txt-02 {
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px; /* 100% */
+}
+
+.customers-feedback-right {
+}
+
+.cf-arrows {
+    margin-bottom: 100px;
+
+    display: flex;
+    justify-content: end;
+    gap: 70px;
+}
+
+.cf-top {
+    margin-bottom: 20px;
+
+    display: flex;
+    gap: 30px;
+}
+
+.cf-stars-holder {
+    display: flex;
+    gap: 2px;
+}
+
+.cf-stars-block {
+    background: #00b67a;
+    width: 19.25px;
+    height: 20.5px;
+}
+
+.cf-stars-block > img {
+    padding: 4px;
+}
+
+.cf-verified {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cf-verified > p {
+    color: #6c6c83;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.9px; /* 185% */
+}
+
+.cf-verified-circle {
+    width: 17px;
+    height: 17.5px;
+
+    border-radius: 8.5px;
+    background: #6c6c83;
+}
+
+.cf-verified-circle > img {
+    padding-bottom: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.cf-designer > h4 {
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21.6px; /* 120% */
+}
+
+.cf-designer > p {
+    margin-bottom: 40px;
+
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.9px; /* 185% */
+}
+
+.cf-designer-txt {
+    width: 748.447px;
+    height: 124.8px;
+
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 41.6px; /* 160% */
+}
+
+.cf-team {
+    display: flex;
+    gap: 30px;
+}
+
+.cf-team-photo-border {
+    border-radius: 35px;
+    border: 2px solid #405ff2;
+}
+
+.cf-team-photo-blured {
+    border-radius: 35px;
+    opacity: 0.3;
+}
+
+.latest-blog-posts {
+    margin-top: 250px;
+}
+
+.latest-blog-posts-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.latest-blog-posts-top > h4 {
+    margin-bottom: 40px;
+
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 100% */
+}
+
+.latest-blog-posts-top > p {
+    color: #050b20;
+    /*text-align: center;*/
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px; /* 100% */
+}
+
+.latest-blog-posts-holder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.latest-blog-posts-img-1 {
+    background-image: url(/Autobox/assets/img/detail-post-qgcqjbpfnsa2eljzsmpa5fzwhwfyhukx3izjwiox88.jpg.png);
+
+    width: 447px;
+    height: 298px;
+    flex-shrink: 0;
+
+    display: flex;
+}
+
+.latest-blog-posts-img-2 {
+    background-image: url(/Autobox/assets/img/blog9-qgcqjcn9umbcq7imn53wpxrd3abbpjonfnn1dsnj20.jpg.png);
+
+    width: 447px;
+    height: 298px;
+    flex-shrink: 0;
+
+    display: flex;
+}
+
+.latest-blog-posts-img-3 {
+    background-image: url(/Autobox/assets/img/blog7-qgcqjcn9umbcq7imn53wpxrd3abbpjonfnn1dsnj20.jpg.png);
+
+    width: 447px;
+    height: 298px;
+    flex-shrink: 0;
+
+    display: flex;
+}
+
+.lbp-sound {
+    margin-top: 20px;
+    margin-left: 20px;
+
+    border-radius: 30px;
+    background: #fff;
+
+    width: 71.97px;
+    height: 35.89px;
+}
+
+.lbp-sound > p {
+    padding-top: 5px;
+
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.9px; /* 185% */
+    text-align: center;
+}
+
+.lbp-accessories {
+    margin-top: 20px;
+    margin-left: 20px;
+
+    border-radius: 30px;
+    background: #fff;
+
+    width: 110.38px;
+    height: 35.89px;
+}
+
+.lbp-accessories > p {
+    padding-top: 5px;
+
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.9px; /* 185% */
+    text-align: center;
+}
+
+.lbp-exterior {
+    margin-top: 20px;
+    margin-left: 20px;
+
+    border-radius: 30px;
+    background: #fff;
+
+    width: 81.45px;
+    height: 35.89px;
+}
+
+.lbp-exterior > p {
+    padding-top: 5px;
+
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.9px; /* 185% */
+    text-align: center;
+}
+
+.latest-blog-posts-info {
+}
+
+.lbp-below-img {
+    display: flex;
+    gap: 30px;
+}
+
+.lbp-below-img > p {
+    margin-top: 20px;
+    margin-bottom: 5px;
+
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.75px; /* 185% */
+    text-transform: capitalize;
+}
+
+.lbp-desc > p {
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 150% */
+}
+
+.premium-brands {
+    margin-top: 115px;
+}
+
+.premium-brands-top {
+    margin-bottom: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.premium-brands-holder {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 30px;
+}
+
+.premium-brands-top > h4 {
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 100% */
+}
+
+.premium-brands-top > p {
+    color: #050b20;
+    /*text-align: center;*/
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px; /* 100% */
+}
+
+.premium-brands-block {
+    width: 209px;
+    height: 180.59px;
+
+    border-radius: 16px;
+    border: 1px solid #e9e9e9;
+
+    background: #fff;
+}
+
+.premium-brands-block > img {
+    padding: 25px 55px;
+}
+
+.premium-brands-block > p {
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21.6px; /* 120% */
+    text-align: center;
+}
+
+.faq-part {
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-part-left {
+    width: 616.5px;
+    height: 540.11px;
+    flex-shrink: 0;
+}
+
+.faq-part-right {
+    padding-top: 90px;
+    padding-right: 90px;
+}
+
+.faq-part-right > h4 {
+    margin-bottom: 20px;
+
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px; /* 140% */
+    text-transform: capitalize;
+}
+
+.faq-part-right > p {
+    margin-bottom: 20px;
+
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.75px; /* 185% */
+}
+
+.faq-part-right-btn {
+    margin-bottom: 20px;
+
+    display: flex;
+    gap: 20px;
+}
+
+.faq-btn-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 211.31px;
+    height: 46px;
+
+    border-radius: 44px;
+    border: 1px solid #050b20;
+
+    background: #fff;
+}
+
+.faq-btn-1 > p {
+    padding: 12px 30px;
+
+    color: #050b20;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px; /* 100% */
+
+    display: flex;
+    align-items: center;
+}
+
+.faq-btn-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 217.64px;
+    height: 46px;
+
+    border-radius: 44px;
+    border: 1px solid #050b20;
+
+    background: #fff;
+}
+
+.faq-btn-2 > p {
+    color: #050b20;
+
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px; /* 100% */
+
+    display: flex;
+    align-items: center;
+}
+
+.faq-main-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 158.94px;
+    height: 53.22px;
+
+    border-radius: 12px;
+    border: 1px solid #050b20;
+
+    background: #050b20;
+    color: #fff;
+}
+
+.faq-main-btn > p {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px; /* 100% */
+}
+
+.about-us {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.about-us-links {
+    display: flex;
+    flex-direction: column;
+
+    width: 256px;
+}
+
+.about-us-links > h4 {
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+    text-transform: capitalize;
+}
+
+.about-us-links > a {
+    margin-top: 20px;
+
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.75px; /* 185% */
+    text-decoration: none;
+}
+
+.about-us-info {
+}
+
+.about-us-info > h4 {
+    margin-bottom: 20px;
+
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 100% */
+}
+
+.about-us-info > p {
+    margin-bottom: 30px;
+
+    color: #050b20;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37.5px; /* 250% */
+}
+/*
+.about-us-info>img:not(:first-child){
+    margin-left: 30px;
+}
+*/
+
+.about-us-info-icons {
+    margin-top: 40px;
+
+    display: flex;
+    gap: 30px;
+}
+
+.terms-and-conditions {
+    margin-top: 75px;
+    margin-bottom: 25px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.tac-left > h4 {
+    color: #000;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.75px; /* 185% */
+}
+
+.tac-dot {
+    width: 4px;
+    height: 4px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background: #050b20;
+}
+
+.tac-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.tac-right > h4 {
+    color: #000;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.75px; /* 185% */
+}

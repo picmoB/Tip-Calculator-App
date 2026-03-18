@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html class="html-doc" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>1st Project</title>
+</head>
+<body>
+    <header class="header-project">
+        <div class="first-div">
+            <img src="assets/images/logo.svg" alt="logo-img">
+            <button class="toggle-btn">
+                <img class="logo-toggle" src="assets/images/icon-sun.svg" alt="logo-toggle">
+            </button>
+        </div>
+    </header>
+
+    <div class="title-div">
+        <h1 class="title-txt">Extensions List</h1>
+        <div class="title-btns">
+            <button data-type="all" class="btn-title-div active">All</button>
+            <button data-type="active" class="btn-title-div">Active</button>
+            <button data-type="inactive" class="btn-title-div">Inactive</button>
+        </div>
+    </div>
+
+    <div class="modal-overlay">
+        <p>Are you sure you want to remove this extension?</p>
+        <div class="modal-confirmation">
+            <button class="btn-yes">Yes</button>
+            <button class="btn-no">No</button>
+        </div>
+    </div>
+
+    <div class="main-project">
+        <div class="el-holder" data-type="inactive">
+            <div class="holder-upper">
+                <img class="upper-icon" src="assets/images/logo-devlens.svg" alt="upper-icon">
+                <div class="upper-txt">
+                    <h1 class="upper-title">Dev Lens</h1>
+                    <p class="upper-p">Quickly inspect page layouts and visualize element boundaries.</p>
+                </div>
+            </div>
+            <div class="holder-lower">
+                <button class="lower-btn">Remove</button>
+                <label class="switch">
+                    <input data-id="0" data-type="inactive" class="toggle-data inactive" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        
+        <div class="el-holder" data-type="inactive">
+            <div class="holder-upper">
+                <img class="upper-icon" src="assets/images/logo-style-spy.svg" alt="upper-icon">
+                <div class="upper-txt">
+                    <h1 class="upper-title">StyleSpy</h1>
+                    <p class="upper-p">Instantly analyize and copy CSS from any webpage element.</p>
+                </div>
+            </div>
+            <div class="holder-lower">
+                <button class="lower-btn">Remove</button>
+                <label class="switch">
+                    <input data-id="1" data-type="inactive" class="toggle-data inactive" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="el-holder" data-type="inactive">
+            <div class="holder-upper">
+                <img class="upper-icon" src="assets/images/logo-speed-boost.svg" alt="upper-icon">
+                <div class="upper-txt">
+                    <h1 class="upper-title">SpeedBoost</h1>
+                    <p class="upper-p">Optimizes browser usage to accelerate page loading.</p>
+                </div>
+            </div>
+            <div class="holder-lower">
+                <button class="lower-btn">Remove</button>
+                <label class="switch">
+                    <input data-id="2" data-type="inactive" class="toggle-data inactive" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="el-holder" data-type="inactive">
+            <div class="holder-upper">
+                <img class="upper-icon" src="assets/images/logo-json-wizard.svg" alt="upper-icon">
+                <div class="upper-txt">
+                    <h1 class="upper-title">JSONWizard</h1>
+                    <p class="upper-p">Formats, validates, and prettifies JSON responses in-browser.</p>
+                </div>
+            </div>
+            <div class="holder-lower">
+                <button class="lower-btn">Remove</button>
+                <label class="switch">
+                    <input data-id="3" data-type="inactive" class="toggle-data inactive" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="el-holder" data-type="inactive">
+            <div class="holder-upper">
+                <img class="upper-icon" src="assets/images/logo-tab-master-pro.svg" alt="upper-icon">
+                <div class="upper-txt">
+                    <h1 class="upper-title">TabMaster Pro</h1>
+                    <p class="upper-p">Organizes browser tabs into groups and sessions.</p>
+                </div>
+            </div>
+            <div class="holder-lower">
+                <button class="lower-btn">Remove</button>
+                <label class="switch">
+                    <input data-id="4" data-type="inactive" class="toggle-data inactive" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="el-holder" data-type="inactive">
+            <div class="holder-upper">
+                <img class="upper-icon" src="assets/images/logo-viewport-buddy.svg" alt="upper-icon">
+                <div class="upper-txt">
+                    <h1 class="upper-title">ViewportBuddy</h1>
+                    <p class="upper-p">Simulates various screen resolutions directly within the browser.</p>
+                </div>
+            </div>
+            <div class="holder-lower">
+                <button class="lower-btn">Remove</button>
+                <label class="switch">
+                    <input data-id="5" data-type="inactive" class="toggle-data inactive" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="el-holder" data-type="inactive">
+            <div class="holder-upper">
+                <img class="upper-icon" src="assets/images/logo-speed-boost.svg" alt="upper-icon">
+                <div class="upper-txt">
+                    <h1 class="upper-title">Markup Notes</h1>
+                    <p class="upper-p">Enables annonation and notes directly onto webpages for collaborative debugging.</p>
+                </div>
+            </div>
+            <div class="holder-lower">
+                <button class="lower-btn">Remove</button>
+                <label class="switch">
+                    <input data-id="6" data-type="inactive" class="toggle-data inactive" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="el-holder" data-type="inactive">
+            <div class="holder-upper">
+                <img class="upper-icon" src="assets/images/logo-grid-guides.svg" alt="upper-icon">
+                <div class="upper-txt">
+                    <h1 class="upper-title">GridGuides</h1>
+                    <p class="upper-p">Overlay customize grids and alignment guides on any webpage.</p>
+                </div>
+            </div>
+            <div class="holder-lower">
+                <button class="lower-btn">Remove</button>
+                <label class="switch">
+                    <input data-id="7" data-type="inactive" class="toggle-data inactive" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="el-holder" data-type="inactive">
+            <div class="holder-upper">
+                <img class="upper-icon" src="assets/images/logo-palette-picker.svg" alt="upper-icon">
+                <div class="upper-txt">
+                    <h1 class="upper-title">Pallete Picker</h1>
+                    <p class="upper-p">Instantly extracts color palletes from any webpage.</p>
+                </div>
+            </div>
+            <div class="holder-lower">
+                <button class="lower-btn">Remove</button>
+                <label class="switch">
+                    <input data-id="8" data-type="inactive" class="toggle-data inactive" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="el-holder" data-type="inactive">
+            <div class="holder-upper">
+                <img class="upper-icon" src="assets/images/logo-link-checker.svg" alt="upper-icon">
+                <div class="upper-txt">
+                    <h1 class="upper-title">LinkChecker</h1>
+                    <p class="upper-p">Scans and highlights broken links on any webapge.</p>
+                </div>
+            </div>
+            <div class="holder-lower">
+                <button class="lower-btn">Remove</button>
+                <label class="switch">
+                    <input data-id="9" data-type="inactive" class="toggle-data inactive" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="el-holder" data-type="inactive">
+            <div class="holder-upper">
+                <img class="upper-icon" src="assets/images/logo-speed-boost.svg" alt="upper-icon">
+                <div class="upper-txt">
+                    <h1 class="upper-title">DOM Snapshot</h1>
+                    <p class="upper-p">Capture and export DOM sctructures quickly.</p>
+                </div>
+            </div>
+            <div class="holder-lower">
+                <button class="lower-btn">Remove</button>
+                <label class="switch">
+                    <input data-id="10" data-type="inactive" class="toggle-data inactive" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="el-holder" data-type="inactive">
+            <div class="holder-upper">
+                <img class="upper-icon" src="assets/images/logo-speed-boost.svg" alt="upper-icon">
+                <div class="upper-txt">
+                    <h1 class="upper-title">ConsolePlus</h1>
+                    <p class="upper-p">Enhanced developer console with advanced filtering and logging.</p>
+                </div>
+            </div>
+            <div class="holder-lower">
+                <button class="lower-btn">Remove</button>
+                <label class="switch">
+                    <input data-id="11" data-type="inactive" class="toggle-data inactive" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <script src="func.js"></script>
+</body>
+</html>

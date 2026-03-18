@@ -1,0 +1,5 @@
+/* Na koji nacin cemo uciniti sliku responsive? */
+.slika {
+    max-width: 100%;
+    height: auto;
+}

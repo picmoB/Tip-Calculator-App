@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            background-color: #121212;
+            color: #00ffcc;
+        }
+    </style>
+</head>
+<body>
+    <div class="digital-clock">
+        <h1><span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span></h1>
+    </div>
+
+    <script>
+        const secEl = document.getElementById("seconds");
+        const minEl = document.getElementById("minutes");
+        const hrEl = document.getElementById("hours");
+
+        let seconds = 0;
+        let minutes = 0;
+        let hours = 0;
+
+        function format(num) {
+            return String(num).padStart(2, "0");
+        }
+
+        setInterval(() => {
+            seconds++;
+
+            if (seconds === 60) {
+                seconds = 0;
+                minutes++;
+            }
+
+            if (minutes === 60) {
+                minutes = 0;
+                hours++;
+            }
+
+            secEl.textContent = format(seconds);
+            minEl.textContent = format(minutes);
+            hrEl.textContent = format(hours);
+        }, 1000);
+    </script>
+</body>
+</html>

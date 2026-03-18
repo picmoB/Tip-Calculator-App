@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            /* globalna varijabla */
+            --yellow: yellow;
+            --black: black;
+        }
+
+        .container {
+            --fontsize: 50px;
+        }
+
+        body {
+            background-color: var(--yellow);
+        }
+
+        h2 {
+            color: var(--black);
+            font-size: 11px;
+            font-size: var(--fontsize);
+        }
+
+        button {
+            --yellow: greenyellow;
+            background-color: var(--yellow);
+            color: red;
+            padding: 40px;
+            border: 1px solid var(--black);
+        }
+
+        @media screen and (min-width: 780px) {
+            .container {
+                --fontsize: 30px;
+            }
+
+            :root {
+                --black: black;
+            }
+        }
+
+        @media screen and (min-width: 780px) {
+
+            .parent {
+                font-size: 16px;
+                /* font-size: 1em */
+            }
+
+            .child {
+                font-size: 1.2em;
+                /* 16 x 1.2 = 19.2px */
+            }
+
+            rem html {
+                font-size: 20px;
+            }
+
+            .npr {
+                font-size: 1.5rem;
+                /* 30px */
+            }
+
+            .mg-top {
+                margin: 2rem;
+                /* 40px */
+            }
+
+            @media (max-width: 600px) {
+                html {
+                    font-size: 15px;
+                }
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>

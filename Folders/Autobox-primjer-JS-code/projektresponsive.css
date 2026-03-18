@@ -1,0 +1,195 @@
+@media only screen and (max-width: 1700px){
+.company, .quick, .our, .vehicles, .salehours {
+         max-width: 200px;  
+         }
+.last {
+    width: 1000px;
+}         
+ }
+
+ @media only screen and (max-width: 1670px){
+    .select{
+        gap: 0;
+    }
+    .heading{
+        width: 500px;
+    }
+    .heading1{
+        margin-left: 0;
+    }
+    .container1, .container10, .container20{
+        padding: 0px 13px 90px 130px;
+    }
+    
+    .lookingsell{
+        gap: 0;
+        padding: 0px 90px 96px 150px;
+        }
+    .online{
+        margin-left: 90px;
+        max-width: 1400px;
+    }
+    .online > img{
+        width: 650px;
+    }
+    .choose{
+        left: 770px;
+    }
+    .customers{
+        width: 900px;
+        margin-left: 0;
+        }
+    .leftcust{
+        width: 400px;
+        margin-top: 20px;
+        padding-left: 80px;
+    }    
+    .rightcust{
+        margin-top: 30px;
+        padding-left: 40px;
+    }
+    .heading6, .heading60{
+        margin-left: 150px;
+    }
+    .bmwcars{
+        margin-left: 50px;
+    }
+    .explore{
+        padding-left: 80px;
+    }
+}
+@media only screen and (max-width: 1366px){
+
+    nav{
+        gap: 0;
+    }
+    .car{
+        padding: 0;
+    }
+    .car > img{
+        left: 10px;
+        flex-shrink: inherit;
+    }
+    .arrowleft{
+        margin-right: 800px;
+    }
+    .arrowright{
+        margin-left: 800px;
+    }
+    .big {
+        white-space: nowrap;
+}
+} 
+@media only screen and (max-width: 1100px){
+    header{
+        position: relative;
+        left: 50px;
+        top: 50px;
+        width: 40%;
+    }
+    nav{
+        width: 70%;
+    }
+    .lookingsell{
+        padding: 0px 90px 96px 0px;
+    }
+    .online{
+        margin-left: 0;
+    }
+    .heading6, .heading60{
+        margin-left: 20px;
+        width: 1000px;
+    }
+    .bmwcars{
+        margin-left: 0;
+        padding: 15px 150px 181px 0px;
+    }
+    .explore{
+        margin-left: 0;
+        padding: 15px 75px 211px 0px;
+    }
+    .container4{
+        gap:10px;
+        justify-content: flex-start;
+    }
+    .container6{
+        margin-left: 20px;
+    }
+    footer{
+        margin-left: 70px;
+    }
+    .last{
+        margin-left: 70px;
+    }
+}
+@media only screen and (max-width: 1000px){
+    header{
+        margin-left: 350px;
+    
+    }
+    .car > p{
+        top: 220px;
+    }
+    .car > h1{
+        top: 90px;
+        font-size: 25px;
+    }
+    .heading1{
+        padding: 115px 550px 121px 0px;
+        width: 1560px;
+    }    
+    .cont{
+        gap: 5px;
+    }
+    }
+
+@media only screen and (max-width: 768px){
+
+    .container{
+        width: 800px;
+        top: 300px;
+        height: 690px;
+        left: 50px;
+    }
+    .container > .heading{
+        padding-top: 0;
+        height: 40px;
+        position: absolute;
+
+    }
+    .heading > .big{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .fd{
+       row-gap: 5px;
+    }
+    .fd1, .fd2, .fd3, .fd4 h6{
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .container p{
+        line-height: 15px;
+        justify-content: flex-start;
+    }
+    .statistic{
+        flex-flow: nowrap;
+        column-gap: 30px;;
+    }
+}
+@media only screen and (max-width: 601px){
+    header{
+        left: 120px;
+    }
+    .looking{
+        padding-left: 0;
+    }
+    .statistic{
+        left: 10px;
+    }
+    .bmwcars{
+        max-width: 1500px;
+    }
+}
+
+
